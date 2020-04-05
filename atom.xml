@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>无为</title>
+  <icon>https://www.gravatar.com/avatar/0e94784f041e99f89cb6e3e880aa68c6</icon>
+  <subtitle>道常无为而无不为</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://lijiangwei.github.io/"/>
+  <updated>2020-04-05T08:21:03.857Z</updated>
+  <id>https://lijiangwei.github.io/</id>
+  
+  <author>
+    <name>xiaosl</name>
+    <email>lijiangwei@xiaosl.cn</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react hoc</title>
+    <link href="https://lijiangwei.github.io/2020/04/05/react-hoc/"/>
+    <id>https://lijiangwei.github.io/2020/04/05/react-hoc/</id>
+    <published>2020-04-05T16:17:30.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考文章：</p><ul><li><a href="https://mp.weixin.qq.com/s/7oUNOuZ2QW8C4h99G8uquw" target="_blank" rel="noopener">组件演进史：从Mixin到HOC，再到Hook</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;参考文章：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/7oUNOuZ2QW8C4h99G8uquw&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;组件演进史：从Mixin到HOC，再到Hook&lt;/a&gt;
+      
+    
+    </summary>
+    
+      <category term="react" scheme="https://lijiangwei.github.io/categories/react/"/>
+    
+      <category term="hoc" scheme="https://lijiangwei.github.io/categories/react/hoc/"/>
+    
+    
+      <category term="react" scheme="https://lijiangwei.github.io/tags/react/"/>
+    
+      <category term="hoc" scheme="https://lijiangwei.github.io/tags/hoc/"/>
+    
+      <category term="react hooks" scheme="https://lijiangwei.github.io/tags/react-hooks/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>react-transition-group</title>
+    <link href="https://lijiangwei.github.io/2020/04/02/react-transition-group/"/>
+    <id>https://lijiangwei.github.io/2020/04/02/react-transition-group/</id>
+    <published>2020-04-02T15:31:17.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>使用react-transition-group做动画效果</p></blockquote><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add react-transition-group</span><br></pre></td></tr></table></figure><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>包含三个组件<code>Transition</code>,<code>CSSTransition</code>,<code>TransitonGroup</code><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;Transition,CSSTransition,TransitonGroup&#125; <span class="keyword">from</span> <span class="string">'react-transition-group'</span>;</span><br></pre></td></tr></table></figure></p><ul><li><a href="https://reactcommunity.org/react-transition-group/css-transition" target="_blank" rel="noopener">官网</a></li><li><a href="https://segmentfault.com/a/1190000015487495" target="_blank" rel="noopener">https://segmentfault.com/a/1190000015487495</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;使用react-transition-group做动画效果&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;figure c
+      
+    
+    </summary>
+    
+    
+      <category term="-react -react-transition-group" scheme="https://lijiangwei.github.io/tags/react-react-transition-group/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nodejs静态部署工具</title>
+    <link href="https://lijiangwei.github.io/2020/03/13/nodejs-static-serve-tool/"/>
+    <id>https://lijiangwei.github.io/2020/03/13/nodejs-static-serve-tool/</id>
+    <published>2020-03-13T10:06:05.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>记录几个好用的静态文件部署工具</p></blockquote><h1 id="本地部署"><a href="#本地部署" class="headerlink" title="本地部署"></a>本地部署</h1><ol><li>http-server</li><li><p>serve</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">serve [-p port] 目录</span><br></pre></td></tr></table></figure></li><li><p>anywhere</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">anywhere</span><br></pre></td></tr></table></figure></li></ol><h1 id="互联网部署"><a href="#互联网部署" class="headerlink" title="互联网部署"></a>互联网部署</h1><ol><li>now</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">now 目录名</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;记录几个好用的静态文件部署工具&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;本地部署&quot;&gt;&lt;a href=&quot;#本地部署&quot; class=&quot;headerlink&quot; title=&quot;本地部署&quot;&gt;&lt;/a&gt;本地部署&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;http-s
+      
+    
+    </summary>
+    
+      <category term="server" scheme="https://lijiangwei.github.io/categories/server/"/>
+    
+    
+      <category term="nodejs" scheme="https://lijiangwei.github.io/tags/nodejs/"/>
+    
+      <category term="static server" scheme="https://lijiangwei.github.io/tags/static-server/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Data URI Scheme</title>
+    <link href="https://lijiangwei.github.io/2019/09/05/data-uri-scheme/"/>
+    <id>https://lijiangwei.github.io/2019/09/05/data-uri-scheme/</id>
+    <published>2019-09-05T14:12:16.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">URI（Uniform Resource Identifier）:统一资源标识符,服务器资源名被称为统一资源标识符。</span><br><span class="line">URL（Uniform Resource Locator）:统一资源定位符，描述了一台特定服务器上某资源的特定位置。</span><br><span class="line">URN（Uniform Resource Name）:统一资源名称</span><br></pre></td></tr></table></figure><h1 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">协议://主机名[:端口]/ 路径/[:参数] [?查询]#Fragment</span><br><span class="line"></span><br><span class="line">protocol :// hostname[:port] / path / [:parameters][?query]#fragment</span><br></pre></td></tr></table></figure><h2 id="格式规范"><a href="#格式规范" class="headerlink" title="格式规范"></a>格式规范</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">data:[&lt;mime type&gt;][;charset=&lt;charset&gt;][;&lt;encoding&gt;],&lt;encoded data&gt;</span><br><span class="line"></span><br><span class="line">1.  data ：协议名称；</span><br><span class="line"></span><br><span class="line">2.  [&lt;mime type&gt;] ：可选项，数据类型（image/png、text/plain等）</span><br><span class="line"></span><br><span class="line">3.  [;charset=&lt;charset&gt;] ：可选项，源文本的字符集编码方式</span><br><span class="line"></span><br><span class="line">4.  [;&lt;encoding&gt;] ：数据编码方式（默认US-ASCII，BASE64两种）</span><br><span class="line"></span><br><span class="line">5.  ,&lt;encoded data&gt; ：编码后的数据</span><br></pre></td></tr></table></figure><h2 id="支持的类型"><a href="#支持的类型" class="headerlink" title="支持的类型"></a>支持的类型</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">data:,                            文本数据</span><br><span class="line">data:text/plain,                    文本数据</span><br><span class="line">data:text/html,                  HTML代码</span><br><span class="line">data:text/html;base64,            base64编码的HTML代码</span><br><span class="line">data:text/css,                    CSS代码</span><br><span class="line">data:text/css;base64,              base64编码的CSS代码</span><br><span class="line">data:text/javascript,              Javascript代码</span><br><span class="line">data:text/javascript;base64,        base64编码的Javascript代码</span><br><span class="line">data:image/gif;base64,            base64编码的gif图片数据</span><br><span class="line">data:image/png;base64,            base64编码的png图片数据</span><br><span class="line">data:image/jpeg;base64,          base64编码的jpeg图片数据</span><br><span class="line">data:image/x-icon;base64,          base64编码的icon图片数据</span><br></pre></td></tr></table></figure><h1 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h1><h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. 减少资源请求链接数。</span><br><span class="line">2. 当访问外部资源很麻烦或受限时，可以很好的利用Data URI Scheme</span><br></pre></td></tr></table></figure><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. Data URL形式的图片不会被浏览器缓存，这意味着每次访问这样页面时都被下载一次，</span><br><span class="line">   但可通过在css文件的background-image样式规则使用Data URI Scheme，使其随css文件一同被浏览器缓存起来）。</span><br><span class="line">2. Base64编码的数据体积通常是原数据的体积4/3，</span><br><span class="line">   也就是Data URL形式的图片会比二进制格式的图片体积大1/3。</span><br><span class="line">3. 移动端性能比较低。</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;基本概念&quot;&gt;&lt;a href=&quot;#基本概念&quot; class=&quot;headerlink&quot; title=&quot;基本概念&quot;&gt;&lt;/a&gt;基本概念&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="https://lijiangwei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="前端" scheme="https://lijiangwei.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="URI" scheme="https://lijiangwei.github.io/tags/URI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>eslint + prettier统一前端代码风格</title>
+    <link href="https://lijiangwei.github.io/2019/09/05/eslint-prettier/"/>
+    <id>https://lijiangwei.github.io/2019/09/05/eslint-prettier/</id>
+    <published>2019-09-05T14:02:09.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<p>转自: <a href="https://segmentfault.com/a/1190000015315545" target="_blank" rel="noopener">https://segmentfault.com/a/1190000015315545</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;转自: &lt;a href=&quot;https://segmentfault.com/a/1190000015315545&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://segmentfault.com/a/1190000015315545&lt;/a&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="eslint" scheme="https://lijiangwei.github.io/categories/eslint/"/>
+    
+    
+      <category term="eslint" scheme="https://lijiangwei.github.io/tags/eslint/"/>
+    
+      <category term="prettier" scheme="https://lijiangwei.github.io/tags/prettier/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>wireguard安装及配置</title>
+    <link href="https://lijiangwei.github.io/2019/06/17/wireguard/"/>
+    <id>https://lijiangwei.github.io/2019/06/17/wireguard/</id>
+    <published>2019-06-17T21:55:02.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="centos7一键安装脚本"><a href="#centos7一键安装脚本" class="headerlink" title="centos7一键安装脚本"></a>centos7一键安装脚本</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh &amp;&amp; chmod +x wireguard_install.sh &amp;&amp; ./wireguard_install.sh</span><br></pre></td></tr></table></figure><h1 id="aws-linux-2-安装wireguard"><a href="#aws-linux-2-安装wireguard" class="headerlink" title="aws linux 2 安装wireguard"></a>aws linux 2 安装wireguard</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -Lo /etc/yum.repos.d/wireguard.repo https://copr.fedorainfracloud.org/coprs/jdoss/wireguard/repo/epel-7/jdoss-wireguard-epel-7.repo</span><br><span class="line"></span><br><span class="line">sudo amazon-linux-extras install epel</span><br><span class="line"></span><br><span class="line">sudo yum install wireguard-dkms wireguard-tools</span><br><span class="line"></span><br><span class="line"># 开启ipv4流量转发</span><br><span class="line">echo &quot;net.ipv4.ip_forward = 1&quot; &gt;&gt; /etc/sysctl.conf</span><br><span class="line">sysctl -p</span><br><span class="line"></span><br><span class="line"># 或者</span><br><span class="line">sysctl -w net.ipv4.ip_forward=1</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 创建并进入WireGuard文件夹</span><br><span class="line">mkdir -p /etc/wireguard &amp;&amp; chmod 0777 /etc/wireguard</span><br><span class="line">cd /etc/wireguard</span><br><span class="line"></span><br><span class="line"># 生成服务器密钥对</span><br><span class="line">umask 077</span><br><span class="line">wg genkey | tee privatekey | wg pubkey &gt; publickey</span><br></pre></td></tr></table></figure><h2 id="使用命令创建配置文件"><a href="#使用命令创建配置文件" class="headerlink" title="使用命令创建配置文件"></a>使用命令创建配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">ip link add dev wg0 type wireguard  # ip link delete dev wg0 type wireguard</span><br><span class="line">ip address add dev wg0 192.168.2.1/24</span><br><span class="line">wg set wg0 private-key ./privatekey</span><br><span class="line">wg setconf wg0 wg0.conf</span><br><span class="line">ip link set wg0 up</span><br><span class="line"></span><br><span class="line"># 添加客户端配置</span><br><span class="line">wg set wg0 peer &lt;client-publickey&gt; allowed-ips 192.168.2.2/24</span><br><span class="line"></span><br><span class="line"># 查看运行状态</span><br><span class="line">wg</span><br><span class="line"></span><br><span class="line"># 查看配置文件</span><br><span class="line">wg showconf</span><br></pre></td></tr></table></figure><h2 id="手动创建配置文件"><a href="#手动创建配置文件" class="headerlink" title="手动创建配置文件"></a>手动创建配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[Interface]</span><br><span class="line">Address = 192.168.2.1/24   #wg0 内网ip地址段 任意的内网地址</span><br><span class="line">SaveConfig = true   # 设为true之后，每次重启服务（stop service时）都会自动保存config</span><br><span class="line"></span><br><span class="line"># 以下是重点: 当服务启动时，通过iptables配置wg0来的流量forward到eth0</span><br><span class="line"># 如果你的device不是eth0而是别的名字，把下面的eth0改成别的。</span><br><span class="line"># 当服务停止的时候，删除相关的iptables规则</span><br><span class="line">PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE; ip6tables -A FORWARD -i wg0 -j ACCEPT; ip6tables -t nat -A POSTROUTING -o eth0 -j MASQUERADE</span><br><span class="line">PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE; ip6tables -D FORWARD -i wg0 -j ACCEPT; ip6tables -t nat -D POSTROUTING -o eth0 -j MASQUERADE</span><br><span class="line"> </span><br><span class="line">ListenPort = 51820   # 随便选一个空闲的端口</span><br><span class="line">PrivateKey = &lt;server-privateKey&gt;   #在上一步里生成的privatekey的内容</span><br><span class="line"></span><br><span class="line"># 客户端1</span><br><span class="line">[Peer]</span><br><span class="line">PublicKey = &lt;client-publicKey&gt;</span><br><span class="line">AllowedIPs = 192.168.2.2/24</span><br><span class="line"></span><br><span class="line"># 客户端2</span><br><span class="line">[Peer]</span><br><span class="line">PublicKey = &lt;client-publicKey&gt;</span><br><span class="line">AllowedIPs = 192.168.2.3/24</span><br></pre></td></tr></table></figure><h2 id="客户端配置文件"><a href="#客户端配置文件" class="headerlink" title="客户端配置文件"></a>客户端配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[Interface]</span><br><span class="line">Name = aws</span><br><span class="line">PrivateKey = &lt;client-privateKey&gt;</span><br><span class="line">PublicKey = S4bzrVS8PBvuXxowqOzB5uNGrd4WQY74UJ388Z1XshQ=</span><br><span class="line">Address = 192.168.2.2/24</span><br><span class="line"></span><br><span class="line">[Peer]</span><br><span class="line">PublicKey = &lt;server-publicKey&gt;</span><br><span class="line">Endpoint = ip:port  #服务器ip:端口</span><br><span class="line">AllowedIPs = 0.0.0.0/0</span><br></pre></td></tr></table></figure><h2 id="启动-停止"><a href="#启动-停止" class="headerlink" title="启动/停止"></a>启动/停止</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/wireguard</span><br><span class="line">wg-quick up wg0</span><br><span class="line">wg-quick down wg0</span><br><span class="line"></span><br><span class="line"># 设置开机启动</span><br><span class="line">systemctl enable wg-quick@wg0</span><br></pre></td></tr></table></figure><h1 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h1><h2 id="Android客户端配置"><a href="#Android客户端配置" class="headerlink" title="Android客户端配置"></a>Android客户端配置</h2><ul><li>Name: 自己起个名字</li><li>点击GENERATE，它会自动生成Private/Public Key</li><li>点击Public key，它会把public key复制到剪贴版，之后要用到。</li><li>Addresses: 填跟服务器端的配置里同样网段的IP，比如说192.168.2.2/24 （虚拟内网ip地址，/24是子网掩码，等于24位1，ip地址不能重复）</li><li>DNS: 8.8.8.8，这个应该是可选的</li><li>添加一个Peer，在Peer里：<br>  Public key: 填服务器端生成的public key<br>  Allowed IPs: 填0.0.0.0/0，允许所有IP（这个很重要，否则即使连上了VPN，也无法访问别的网站）<br>  Endpoint: 填服务器的IP:端口（端口是服务器监听的端口）</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;centos7一键安装脚本&quot;&gt;&lt;a href=&quot;#centos7一键安装脚本&quot; class=&quot;headerlink&quot; title=&quot;centos7一键安装脚本&quot;&gt;&lt;/a&gt;centos7一键安装脚本&lt;/h1&gt;&lt;figure class=&quot;highlight plai
+      
+    
+    </summary>
+    
+      <category term="vpn" scheme="https://lijiangwei.github.io/categories/vpn/"/>
+    
+    
+      <category term="wireguard" scheme="https://lijiangwei.github.io/tags/wireguard/"/>
+    
+      <category term="centos7" scheme="https://lijiangwei.github.io/tags/centos7/"/>
+    
+      <category term="aws linux2" scheme="https://lijiangwei.github.io/tags/aws-linux2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>v2ray安装</title>
+    <link href="https://lijiangwei.github.io/2019/06/13/vpn-v2ray/"/>
+    <id>https://lijiangwei.github.io/2019/06/13/vpn-v2ray/</id>
+    <published>2019-06-13T22:53:32.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>一键安装v2ray服务器</p></blockquote><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -s -L https://git.io/v2ray.sh)</span><br><span class="line"></span><br><span class="line"># 命令</span><br><span class="line">v2ray</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;一键安装v2ray服务器&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;figure class=&quot;highlight p
+      
+    
+    </summary>
+    
+      <category term="v2ray" scheme="https://lijiangwei.github.io/categories/v2ray/"/>
+    
+    
+      <category term="vpn" scheme="https://lijiangwei.github.io/tags/vpn/"/>
+    
+      <category term="v2ray" scheme="https://lijiangwei.github.io/tags/v2ray/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>aws ec2服务器</title>
+    <link href="https://lijiangwei.github.io/2019/06/11/cloud-server-aws/"/>
+    <id>https://lijiangwei.github.io/2019/06/11/cloud-server-aws/</id>
+    <published>2019-06-11T23:16:25.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="切换root用户登录"><a href="#切换root用户登录" class="headerlink" title="切换root用户登录"></a>切换root用户登录</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"># 密钥证书放到了~/.ssh目录</span><br><span class="line">cd ~/.ssh</span><br><span class="line"></span><br><span class="line"># 把证书权限修改为400</span><br><span class="line">chmod 400 aws-tokyo.pem</span><br><span class="line"></span><br><span class="line"># ssh远程连接</span><br><span class="line">ssh -i aws-tokyo.pem ec2-user@ec2-3-113-37-231.ap-northeast-1.compute.amazonaws.com</span><br><span class="line"></span><br><span class="line"># root用户设置密码</span><br><span class="line">sudo passwd root</span><br><span class="line"></span><br><span class="line"># 切换到root用户</span><br><span class="line">su root</span><br><span class="line"></span><br><span class="line"># 修改 PasswordAuthentication 为 yes </span><br><span class="line">vim /etc/ssh/sshd_config</span><br><span class="line"></span><br><span class="line"># 重启服务器</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;切换root用户登录&quot;&gt;&lt;a href=&quot;#切换root用户登录&quot; class=&quot;headerlink&quot; title=&quot;切换root用户登录&quot;&gt;&lt;/a&gt;切换root用户登录&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;t
+      
+    
+    </summary>
+    
+      <category term="aws" scheme="https://lijiangwei.github.io/categories/aws/"/>
+    
+    
+      <category term="cloudserver" scheme="https://lijiangwei.github.io/tags/cloudserver/"/>
+    
+      <category term="aws" scheme="https://lijiangwei.github.io/tags/aws/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ssr服务器安装脚本</title>
+    <link href="https://lijiangwei.github.io/2019/05/08/ssr-server/"/>
+    <id>https://lijiangwei.github.io/2019/05/08/ssr-server/</id>
+    <published>2019-05-08T08:51:44.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>使用ssr一键安装脚本搭建ssr服务器</p></blockquote><h1 id="doubi一键安装脚本"><a href="#doubi一键安装脚本" class="headerlink" title="doubi一键安装脚本"></a>doubi一键安装脚本</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol><li>下载安装脚本</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh</span><br></pre></td></tr></table></figure><ol start="2"><li>执行安装</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x ssr.sh</span><br><span class="line">./ssr.sh</span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h2 id="卸载"><a href="#卸载" class="headerlink" title="卸载"></a>卸载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./ssr.sh uninstall</span><br></pre></td></tr></table></figure><h1 id="秋水一键安装脚本"><a href="#秋水一键安装脚本" class="headerlink" title="秋水一键安装脚本"></a>秋水一键安装脚本</h1><h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><ol><li>下载安装脚本</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget –no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</span><br></pre></td></tr></table></figure><ol start="2"><li>执行安装</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod +x shadowsocks-all.sh</span><br><span class="line">./shadowsocks-all.sh</span><br></pre></td></tr></table></figure><h2 id="配置-1"><a href="#配置-1" class="headerlink" title="配置"></a>配置</h2><h2 id="常用命令-1"><a href="#常用命令-1" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># Shadowsocks-libev 版：</span><br><span class="line">/etc/init.d/shadowsocks-libev start</span><br><span class="line">/etc/init.d/shadowsocks-libev stop</span><br><span class="line">/etc/init.d/shadowsocks-libev restart</span><br><span class="line">/etc/init.d/shadowsocks-libev status</span><br><span class="line"></span><br><span class="line"># Shadowsocks-Python 版：</span><br><span class="line">/etc/init.d/shadowsocks-python start</span><br><span class="line">/etc/init.d/shadowsocks-python stop</span><br><span class="line">/etc/init.d/shadowsocks-python restart</span><br><span class="line">/etc/init.d/shadowsocks-python status</span><br><span class="line"></span><br><span class="line"># ShadowsocksR 版：</span><br><span class="line">/etc/init.d/shadowsocks-r start</span><br><span class="line">/etc/init.d/shadowsocks-r stop</span><br><span class="line">/etc/init.d/shadowsocks-r restart</span><br><span class="line">/etc/init.d/shadowsocks-r status</span><br><span class="line"></span><br><span class="line"># Shadowsocks-Go 版：</span><br><span class="line">/etc/init.d/shadowsocks-go start</span><br><span class="line">/etc/init.d/shadowsocks-go stop</span><br><span class="line">/etc/init.d/shadowsocks-go restart</span><br><span class="line">/etc/init.d/shadowsocks-go status</span><br></pre></td></tr></table></figure><h2 id="卸载-1"><a href="#卸载-1" class="headerlink" title="卸载"></a>卸载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./shadowsocks-all.sh uninstall</span><br></pre></td></tr></table></figure><h1 id="安装bbr加速"><a href="#安装bbr加速" class="headerlink" title="安装bbr加速"></a>安装bbr加速</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; bash bbr.sh</span><br></pre></td></tr></table></figure><h1 id="安装kcptun加速器"><a href="#安装kcptun加速器" class="headerlink" title="安装kcptun加速器"></a>安装kcptun加速器</h1><blockquote><p>参考<a href="https://ssr.tools/588" target="_blank" rel="noopener">https://ssr.tools/588</a></p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh</span><br><span class="line">chmod +x ./kcptun.sh</span><br><span class="line">./kcptun.sh</span><br></pre></td></tr></table></figure><h1 id="centos关闭防火墙"><a href="#centos关闭防火墙" class="headerlink" title="centos关闭防火墙"></a>centos关闭防火墙</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 查看防火墙状态</span><br><span class="line">firewall-cmd --state</span><br><span class="line"></span><br><span class="line"># 关闭防火墙</span><br><span class="line">systemctl stop firewalld.service</span><br><span class="line"></span><br><span class="line"># 禁止开机启动</span><br><span class="line">systemctl disable firewalld.service</span><br></pre></td></tr></table></figure><blockquote><p>参考<br>    <a href="https://ssr.tools/373" target="_blank" rel="noopener">https://ssr.tools/373</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;使用ssr一键安装脚本搭建ssr服务器&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;doubi一键安装脚本&quot;&gt;&lt;a href=&quot;#doubi一键安装脚本&quot; class=&quot;headerlink&quot; title=&quot;doubi一键安装脚本&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="ssr" scheme="https://lijiangwei.github.io/categories/ssr/"/>
+    
+    
+      <category term="ssr" scheme="https://lijiangwei.github.io/tags/ssr/"/>
+    
+      <category term="ss" scheme="https://lijiangwei.github.io/tags/ss/"/>
+    
+      <category term="bbr" scheme="https://lijiangwei.github.io/tags/bbr/"/>
+    
+      <category term="kcptun" scheme="https://lijiangwei.github.io/tags/kcptun/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jenkins</title>
+    <link href="https://lijiangwei.github.io/2019/03/05/jenkins/"/>
+    <id>https://lijiangwei.github.io/2019/03/05/jenkins/</id>
+    <published>2019-03-05T22:56:18.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><ol><li>centos7系统安装</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo</span><br><span class="line">sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key</span><br><span class="line">yum install jenkins</span><br></pre></td></tr></table></figure><blockquote><p>官方安装比较慢，使用下面的国内地址</p></blockquote><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat-stable/jenkins-2.150.3-1.1.noarch.rpm</span><br><span class="line">rpm -ivh jenkins-2.150.3-1.1.noarch.rpm</span><br></pre></td></tr></table></figure><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><ul><li>修改端口</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysconfig/jenkins</span><br></pre></td></tr></table></figure><h1 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">service jenkins start | stop | restart</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> 设置开机启动</span><br><span class="line">sudo chkconfig jenkins on</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;centos7系统安装&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;t
+      
+    
+    </summary>
+    
+      <category term="jenkins" scheme="https://lijiangwei.github.io/categories/jenkins/"/>
+    
+    
+      <category term="CI" scheme="https://lijiangwei.github.io/tags/CI/"/>
+    
+      <category term="jenkins" scheme="https://lijiangwei.github.io/tags/jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>editorconfig</title>
+    <link href="https://lijiangwei.github.io/2018/08/07/editor-editorconfig/"/>
+    <id>https://lijiangwei.github.io/2018/08/07/editor-editorconfig/</id>
+    <published>2018-08-07T11:41:13.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>使用editorconfig配置文件统一代码规范，vs code 默认不支持<code>.editconfig</code>文件，需要安装<code>EditorConfig</code>插件</p></blockquote><h1 id="安装EditorConfig插件"><a href="#安装EditorConfig插件" class="headerlink" title="安装EditorConfig插件"></a>安装EditorConfig插件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 打开命令窗口</span><br><span class="line">command + shift + p</span><br><span class="line"></span><br><span class="line"># 搜索editorconfig</span><br></pre></td></tr></table></figure><h1 id="editorconfig配置"><a href="#editorconfig配置" class="headerlink" title="editorconfig配置"></a>editorconfig配置</h1><table><thead><tr><th>配置</th><th>值</th><th>描述</th></tr></thead><tbody><tr><td>indent_style</td><td><code>tab</code> <code>space</code></td><td>Indentation Style</td></tr><tr><td>indent_size</td><td><code>an integer</code> <code>tab</code></td><td>Indentation Size (in single-spaced characters)</td></tr><tr><td>tab_width</td><td><code>a positive integer (defaults indent_size when indent_size is a number)</code></td><td>Width of a single tabstop character</td></tr><tr><td>end_of_line</td><td><code>lf</code> <code>crlf</code> <code>cr</code></td><td>Line ending file format (Unix, DOS, Mac)</td></tr><tr><td>charset</td><td><code>utf-8</code></td><td>File character encoding</td></tr><tr><td>trim_trailing_whitespace</td><td><code>true</code> <code>false</code></td><td>Denotes whether whitespace is allowed at the end of lines</td></tr><tr><td>insert_final_newline</td><td><code>true</code> <code>false</code></td><td>Denotes whether file should end with a newline</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;使用editorconfig配置文件统一代码规范，vs code 默认不支持&lt;code&gt;.editconfig&lt;/code&gt;文件，需要安装&lt;code&gt;EditorConfig&lt;/code&gt;插件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;安
+      
+    
+    </summary>
+    
+      <category term="editor" scheme="https://lijiangwei.github.io/categories/editor/"/>
+    
+    
+      <category term="editor" scheme="https://lijiangwei.github.io/tags/editor/"/>
+    
+      <category term="editorconfig" scheme="https://lijiangwei.github.io/tags/editorconfig/"/>
+    
+      <category term="代码规范" scheme="https://lijiangwei.github.io/tags/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>postcss-stylelint</title>
+    <link href="https://lijiangwei.github.io/2018/08/04/postcss-stylelint/"/>
+    <id>https://lijiangwei.github.io/2018/08/04/postcss-stylelint/</id>
+    <published>2018-08-04T00:10:10.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>在webpack中使用stylelint规范css写法</p></blockquote><h1 id="在editor中安装stylelint"><a href="#在editor中安装stylelint" class="headerlink" title="在editor中安装stylelint"></a>在editor中安装stylelint</h1><h2 id="vscode安装stylelint插件"><a href="#vscode安装stylelint插件" class="headerlink" title="vscode安装stylelint插件"></a>vscode安装stylelint插件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1、command + shift + p 打开命令窗口</span><br><span class="line">2、输入Install Extensions</span><br><span class="line">3、搜索 @sort:installs stylelint</span><br><span class="line"># 安装stylelint插件</span><br></pre></td></tr></table></figure><h2 id="配置插件"><a href="#配置插件" class="headerlink" title="配置插件"></a>配置插件</h2><p>设置user setting或者workspace setting，关闭系统对css的校验</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&quot;css.validate&quot;: false,</span><br><span class="line">&quot;less.validate&quot;: false,</span><br><span class="line">&quot;scss.validate&quot;: false</span><br></pre></td></tr></table></figure><h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 安装配置规则</span><br><span class="line">npm install stylelint-config-standard --save-dev</span><br><span class="line"></span><br><span class="line"># 新建配置文件.stylelintrc</span><br><span class="line">&#123;</span><br><span class="line">  &quot;extends&quot;: &quot;stylelint-config-standard&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="格式化文件"><a href="#格式化文件" class="headerlink" title="格式化文件"></a>格式化文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stylelint --fix</span><br></pre></td></tr></table></figure><h2 id="安装格式化插件"><a href="#安装格式化插件" class="headerlink" title="安装格式化插件"></a>安装格式化插件</h2><p>vscode安装 <code>stylefmt</code></p><h1 id="webpack集成stylelint"><a href="#webpack集成stylelint" class="headerlink" title="webpack集成stylelint"></a>webpack集成stylelint</h1><h2 id="安装stylelint"><a href="#安装stylelint" class="headerlink" title="安装stylelint"></a>安装stylelint</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install stylelint -D</span><br></pre></td></tr></table></figure><h2 id="修改postcss配置文件"><a href="#修改postcss配置文件" class="headerlink" title="修改postcss配置文件"></a>修改postcss配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  plugins: [</span><br><span class="line">    require(&apos;autoprefixer&apos;)(&#123;</span><br><span class="line">      browsers: [&apos;last 5 versions&apos;]</span><br><span class="line">    &#125;),</span><br><span class="line">    require(&apos;cssnano&apos;)(&#123;&#125;),</span><br><span class="line">    require(&apos;stylelint&apos;)(&#123;&#125;)</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;在webpack中使用stylelint规范css写法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;在editor中安装stylelint&quot;&gt;&lt;a href=&quot;#在editor中安装stylelint&quot; class=&quot;headerlink&quot;
+      
+    
+    </summary>
+    
+      <category term="css" scheme="https://lijiangwei.github.io/categories/css/"/>
+    
+      <category term="postcss" scheme="https://lijiangwei.github.io/categories/css/postcss/"/>
+    
+    
+      <category term="css" scheme="https://lijiangwei.github.io/tags/css/"/>
+    
+      <category term="postcss" scheme="https://lijiangwei.github.io/tags/postcss/"/>
+    
+      <category term="stylelint" scheme="https://lijiangwei.github.io/tags/stylelint/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>postcss-cssnano</title>
+    <link href="https://lijiangwei.github.io/2018/08/03/postcss-cssnano/"/>
+    <id>https://lijiangwei.github.io/2018/08/03/postcss-cssnano/</id>
+    <published>2018-08-03T23:56:37.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="cssnano使用"><a href="#cssnano使用" class="headerlink" title="cssnano使用"></a>cssnano使用</h1><blockquote><p>在webpack中使用cssnano压缩css代码，首先需要安装postcss-loader</p></blockquote><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i cssnano -D</span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># postcss.config.js</span><br><span class="line">module.exports = &#123;</span><br><span class="line">  parser: &apos;sugarss&apos;,</span><br><span class="line">  plugins: &#123;</span><br><span class="line">    &apos;postcss-import&apos;: &#123;&#125;,</span><br><span class="line">    &apos;postcss-preset-env&apos;: &#123;&#125;,</span><br><span class="line">    &apos;cssnano&apos;: &#123;&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;cssnano使用&quot;&gt;&lt;a href=&quot;#cssnano使用&quot; class=&quot;headerlink&quot; title=&quot;cssnano使用&quot;&gt;&lt;/a&gt;cssnano使用&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;在webpack中使用cssnano压缩css代码，首先需
+      
+    
+    </summary>
+    
+      <category term="css" scheme="https://lijiangwei.github.io/categories/css/"/>
+    
+      <category term="postcss" scheme="https://lijiangwei.github.io/categories/css/postcss/"/>
+    
+    
+      <category term="css" scheme="https://lijiangwei.github.io/tags/css/"/>
+    
+      <category term="postcss" scheme="https://lijiangwei.github.io/tags/postcss/"/>
+    
+      <category term="cssnano" scheme="https://lijiangwei.github.io/tags/cssnano/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jekyll编译静态页面</title>
+    <link href="https://lijiangwei.github.io/2018/07/26/github-jekyll-deploy/"/>
+    <id>https://lijiangwei.github.io/2018/07/26/github-jekyll-deploy/</id>
+    <published>2018-07-26T21:24:50.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>使用jekyll编译github的gh-pages生成静态页面</p></blockquote><h1 id="安装jekyll"><a href="#安装jekyll" class="headerlink" title="安装jekyll"></a>安装jekyll</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. gem install bundler</span><br><span class="line">2. bundler install</span><br></pre></td></tr></table></figure><h1 id="启动本地服务"><a href="#启动本地服务" class="headerlink" title="启动本地服务"></a>启动本地服务</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bundle exec jekyll serve</span><br></pre></td></tr></table></figure><h1 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bundle exec jekyll build</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;使用jekyll编译github的gh-pages生成静态页面&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;安装jekyll&quot;&gt;&lt;a href=&quot;#安装jekyll&quot; class=&quot;headerlink&quot; title=&quot;安装jekyll&quot;&gt;
+      
+    
+    </summary>
+    
+      <category term="jekyll" scheme="https://lijiangwei.github.io/categories/jekyll/"/>
+    
+    
+      <category term="github" scheme="https://lijiangwei.github.io/tags/github/"/>
+    
+      <category term="jekyll" scheme="https://lijiangwei.github.io/tags/jekyll/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx常用配置</title>
+    <link href="https://lijiangwei.github.io/2018/07/25/nginx-tutorial/"/>
+    <id>https://lijiangwei.github.io/2018/07/25/nginx-tutorial/</id>
+    <published>2018-07-25T09:16:09.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="nginx-教程"><a href="#nginx-教程" class="headerlink" title="nginx 教程"></a>nginx 教程</h1><blockquote><p><a href="https://www.cnblogs.com/tongpao/p/4638257.html" target="_blank" rel="noopener">nginx伪静态规则</a></p></blockquote><h2 id="隐藏html文件后缀"><a href="#隐藏html文件后缀" class="headerlink" title="隐藏html文件后缀"></a>隐藏html文件后缀</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 文件不存在时访问.html文件</span><br><span class="line">location / &#123;</span><br><span class="line">    if (!-e $request_filename) &#123;</span><br><span class="line">        rewrite ^(.*)$ /$1.html last;</span><br><span class="line">        break;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="开启gzip"><a href="#开启gzip" class="headerlink" title="开启gzip"></a>开启gzip</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">gzip on;</span><br><span class="line">gzip_min_length  2k;</span><br><span class="line">gzip_buffers     4 16k;</span><br><span class="line">gzip_http_version 1.1;</span><br><span class="line">gzip_comp_level 6;</span><br><span class="line">gzip_types     text/plain application/javascript application/x-javascript image/jpeg image/gif image/png text/javascript text/css application/xml;</span><br><span class="line">gzip_vary on;</span><br><span class="line">gzip_proxied   expired no-cache no-store private auth;</span><br><span class="line">gzip_disable   &quot;MSIE [1-6]\.&quot;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;nginx-教程&quot;&gt;&lt;a href=&quot;#nginx-教程&quot; class=&quot;headerlink&quot; title=&quot;nginx 教程&quot;&gt;&lt;/a&gt;nginx 教程&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/
+      
+    
+    </summary>
+    
+      <category term="nginx" scheme="https://lijiangwei.github.io/categories/nginx/"/>
+    
+    
+      <category term="nginx" scheme="https://lijiangwei.github.io/tags/nginx/"/>
+    
+      <category term="tutorial" scheme="https://lijiangwei.github.io/tags/tutorial/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>docsify</title>
+    <link href="https://lijiangwei.github.io/2018/07/22/tools-docs-docsify/"/>
+    <id>https://lijiangwei.github.io/2018/07/22/tools-docs-docsify/</id>
+    <published>2018-07-22T23:28:10.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>编写api文档工具介绍</p></blockquote><h1 id="docsify"><a href="#docsify" class="headerlink" title="docsify"></a>docsify</h1><h1 id="gitbook"><a href="#gitbook" class="headerlink" title="gitbook"></a>gitbook</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;编写api文档工具介绍&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;docsify&quot;&gt;&lt;a href=&quot;#docsify&quot; class=&quot;headerlink&quot; title=&quot;docsify&quot;&gt;&lt;/a&gt;docsify&lt;/h1&gt;&lt;h1 id=
+      
+    
+    </summary>
+    
+      <category term="doc" scheme="https://lijiangwei.github.io/categories/doc/"/>
+    
+    
+      <category term="工具" scheme="https://lijiangwei.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="doc" scheme="https://lijiangwei.github.io/tags/doc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>scp命令</title>
+    <link href="https://lijiangwei.github.io/2018/07/18/linux-cmd-scp/"/>
+    <id>https://lijiangwei.github.io/2018/07/18/linux-cmd-scp/</id>
+    <published>2018-07-18T16:03:01.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="复制文件夹到远程服务器"><a href="#复制文件夹到远程服务器" class="headerlink" title="复制文件夹到远程服务器"></a>复制文件夹到远程服务器</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scp -r ./dist root@47.104.230.189:/usr/local/apache4/htdocs/able-static/</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;复制文件夹到远程服务器&quot;&gt;&lt;a href=&quot;#复制文件夹到远程服务器&quot; class=&quot;headerlink&quot; title=&quot;复制文件夹到远程服务器&quot;&gt;&lt;/a&gt;复制文件夹到远程服务器&lt;/h1&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;tabl
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://lijiangwei.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://lijiangwei.github.io/tags/linux/"/>
+    
+      <category term="scp" scheme="https://lijiangwei.github.io/tags/scp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>eclipse打开npm依赖包卡死</title>
+    <link href="https://lijiangwei.github.io/2018/06/28/tools-eclipse-node-modules/"/>
+    <id>https://lijiangwei.github.io/2018/06/28/tools-eclipse-node-modules/</id>
+    <published>2018-06-28T09:00:46.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<p>前端工程安装了很多npm的包，使用eclipse开发时导致eclipse经常卡死的解决办法：</p><ol><li>把node_modules目录过滤掉</li><li>把node_modules从svn版本控制中忽略掉</li></ol><h1 id="过滤node-modules目录"><a href="#过滤node-modules目录" class="headerlink" title="过滤node_modules目录"></a>过滤node_modules目录</h1><p>右键单击工程，选择Properties-&gt;Resourse-&gt;Resource Filters，点击Add按钮添加要过滤的目录<br><img src="http://qiniu.xiaosl.cn/resource_filter.png" alt=""></p><h1 id="svn忽略node-modules目录"><a href="#svn忽略node-modules目录" class="headerlink" title="svn忽略node_modules目录"></a>svn忽略node_modules目录</h1><p>右键单击工程，选择Term-&gt;设置属性<br><img src="http://qiniu.xiaosl.cn/eclipse_svn_ignore.png" alt=""></p><p>属性名选择svn:ignore，内容输入node_modules<br><img src="http://qiniu.xiaosl.cn/eclipse_svn_property.png" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前端工程安装了很多npm的包，使用eclipse开发时导致eclipse经常卡死的解决办法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;把node_modules目录过滤掉&lt;/li&gt;
+&lt;li&gt;把node_modules从svn版本控制中忽略掉&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;过滤no
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://lijiangwei.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="eclipse" scheme="https://lijiangwei.github.io/categories/%E5%B7%A5%E5%85%B7/eclipse/"/>
+    
+    
+      <category term="eclipse" scheme="https://lijiangwei.github.io/tags/eclipse/"/>
+    
+      <category term="npm" scheme="https://lijiangwei.github.io/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git常用总结</title>
+    <link href="https://lijiangwei.github.io/2018/06/15/git-tutorial/"/>
+    <id>https://lijiangwei.github.io/2018/06/15/git-tutorial/</id>
+    <published>2018-06-15T22:59:38.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><blockquote><p>配置文件有三个级别 仓库&gt;全局&gt;系统</p></blockquote><ol><li>仓库配置<br>仓库级别配置文件在.git目录</li></ol><p>查看仓库级别的配置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --local -l</span><br></pre></td></tr></table></figure></p><ol start="2"><li>全局配置<br>全局配置文件在用户目录下，.gitconfig文件</li></ol><p>查看全局配置项<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global -l</span><br></pre></td></tr></table></figure></p><ol start="3"><li>系统配置<br>系统级别的配置在git的安装目录</li></ol><h2 id="记录用户名、密码"><a href="#记录用户名、密码" class="headerlink" title="记录用户名、密码"></a>记录用户名、密码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global credential.helper store</span><br><span class="line"></span><br><span class="line"># 修改用户名密码</span><br><span class="line">git config --global credential.helper username</span><br></pre></td></tr></table></figure><h2 id="设置代理"><a href="#设置代理" class="headerlink" title="设置代理"></a>设置代理</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy http://127.0.0.1:808</span><br><span class="line">git config --global https.proxy https://127.0.0.1:808</span><br></pre></td></tr></table></figure><h2 id="删除配置"><a href="#删除配置" class="headerlink" title="删除配置"></a>删除配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --unset xxx</span><br></pre></td></tr></table></figure><h2 id="拉取远程仓库分支"><a href="#拉取远程仓库分支" class="headerlink" title="拉取远程仓库分支"></a>拉取远程仓库分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull &lt;远程库名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</span><br></pre></td></tr></table></figure><h1 id="问题处理"><a href="#问题处理" class="headerlink" title="问题处理"></a>问题处理</h1><h2 id="warning-http-proxy-has-multiple-values"><a href="#warning-http-proxy-has-multiple-values" class="headerlink" title="warning: http.proxy has multiple values"></a>warning: http.proxy has multiple values</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --unset-all http.proxy</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h1&gt;&lt;h2 id=&quot;配置文件&quot;&gt;&lt;a href=&quot;#配置文件&quot; class=&quot;headerlink&quot; title=&quot;配置文件&quot;&gt;&lt;/a&gt;配置文件&lt;/h
+      
+    
+    </summary>
+    
+      <category term="git" scheme="https://lijiangwei.github.io/categories/git/"/>
+    
+    
+      <category term="git" scheme="https://lijiangwei.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>拷贝.git目录</title>
+    <link href="https://lijiangwei.github.io/2018/06/15/git-copy-git/"/>
+    <id>https://lijiangwei.github.io/2018/06/15/git-copy-git/</id>
+    <published>2018-06-15T22:41:33.000Z</published>
+    <updated>2020-04-05T08:21:03.857Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>有时候我们需要从远程仓库把代码下载到一个已经存在的目录，git clone的时候会报错，可以先把版本信息下载到一个空目录然后复制到当前目录，然后恢复到最新版本，这样当前目录就会包含版本信息。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#当前在workspace目录</span><br><span class="line">git clone --no-checkout 远程仓库地址 tmp</span><br><span class="line">mv tmp/.git ./</span><br><span class="line">rm -rf tmp</span><br><span class="line">git reset --hard HEAD</span><br></pre></td></tr></table></figure><blockquote><p>由于window、mac、linux系统的换行符不一样，导致mac系统下载下来的代码，git status的时候显示很多文件有修改，可以修改mac系统换行符的设置</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.autocrlf false</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;有时候我们需要从远程仓库把代码下载到一个已经存在的目录，git clone的时候会报错，可以先把版本信息下载到一个空目录然后复制到当前目录，然后恢复到最新版本，这样当前目录就会包含版本信息。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure cl
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="https://lijiangwei.github.io/tags/git/"/>
+    
+  </entry>
+  
+</feed>

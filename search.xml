@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[react hoc]]></title>
+    <url>%2F2020%2F04%2F05%2Freact-hoc%2F</url>
+    <content type="text"><![CDATA[参考文章： 组件演进史：从Mixin到HOC，再到Hook]]></content>
+      <categories>
+        <category>react</category>
+        <category>hoc</category>
+      </categories>
+      <tags>
+        <tag>react</tag>
+        <tag>hoc</tag>
+        <tag>react hooks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[react-transition-group]]></title>
+    <url>%2F2020%2F04%2F02%2Freact-transition-group%2F</url>
+    <content type="text"><![CDATA[使用react-transition-group做动画效果 安装1yarn add react-transition-group 使用包含三个组件Transition,CSSTransition,TransitonGroup1import &#123;Transition,CSSTransition,TransitonGroup&#125; from 'react-transition-group'; 官网 https://segmentfault.com/a/1190000015487495]]></content>
+      <tags>
+        <tag>-react -react-transition-group</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nodejs静态部署工具]]></title>
+    <url>%2F2020%2F03%2F13%2Fnodejs-static-serve-tool%2F</url>
+    <content type="text"><![CDATA[记录几个好用的静态文件部署工具 本地部署 http-server serve 1serve [-p port] 目录 anywhere 1anywhere 互联网部署 now 1now 目录名]]></content>
+      <categories>
+        <category>server</category>
+      </categories>
+      <tags>
+        <tag>nodejs</tag>
+        <tag>static server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Data URI Scheme]]></title>
+    <url>%2F2019%2F09%2F05%2Fdata-uri-scheme%2F</url>
+    <content type="text"><![CDATA[基本概念123URI（Uniform Resource Identifier）:统一资源标识符,服务器资源名被称为统一资源标识符。URL（Uniform Resource Locator）:统一资源定位符，描述了一台特定服务器上某资源的特定位置。URN（Uniform Resource Name）:统一资源名称 组成123协议://主机名[:端口]/ 路径/[:参数] [?查询]#Fragmentprotocol :// hostname[:port] / path / [:parameters][?query]#fragment 格式规范1234567891011data:[&lt;mime type&gt;][;charset=&lt;charset&gt;][;&lt;encoding&gt;],&lt;encoded data&gt;1. data ：协议名称；2. [&lt;mime type&gt;] ：可选项，数据类型（image/png、text/plain等）3. [;charset=&lt;charset&gt;] ：可选项，源文本的字符集编码方式4. [;&lt;encoding&gt;] ：数据编码方式（默认US-ASCII，BASE64两种）5. ,&lt;encoded data&gt; ：编码后的数据 支持的类型123456789101112data:, 文本数据data:text/plain, 文本数据data:text/html, HTML代码data:text/html;base64, base64编码的HTML代码data:text/css, CSS代码data:text/css;base64, base64编码的CSS代码data:text/javascript, Javascript代码data:text/javascript;base64, base64编码的Javascript代码data:image/gif;base64, base64编码的gif图片数据data:image/png;base64, base64编码的png图片数据data:image/jpeg;base64, base64编码的jpeg图片数据data:image/x-icon;base64, base64编码的icon图片数据 优缺点优点121. 减少资源请求链接数。2. 当访问外部资源很麻烦或受限时，可以很好的利用Data URI Scheme 缺点123451. Data URL形式的图片不会被浏览器缓存，这意味着每次访问这样页面时都被下载一次， 但可通过在css文件的background-image样式规则使用Data URI Scheme，使其随css文件一同被浏览器缓存起来）。2. Base64编码的数据体积通常是原数据的体积4/3， 也就是Data URL形式的图片会比二进制格式的图片体积大1/3。3. 移动端性能比较低。]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>URI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[eslint + prettier统一前端代码风格]]></title>
+    <url>%2F2019%2F09%2F05%2Feslint-prettier%2F</url>
+    <content type="text"><![CDATA[转自: https://segmentfault.com/a/1190000015315545]]></content>
+      <categories>
+        <category>eslint</category>
+      </categories>
+      <tags>
+        <tag>eslint</tag>
+        <tag>prettier</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[wireguard安装及配置]]></title>
+    <url>%2F2019%2F06%2F17%2Fwireguard%2F</url>
+    <content type="text"><![CDATA[centos7一键安装脚本1wget https://raw.githubusercontent.com/atrandys/wireguard/master/wireguard_install.sh &amp;&amp; chmod +x wireguard_install.sh &amp;&amp; ./wireguard_install.sh aws linux 2 安装wireguard安装123456789101112131415161718192021sudo curl -Lo /etc/yum.repos.d/wireguard.repo https://copr.fedorainfracloud.org/coprs/jdoss/wireguard/repo/epel-7/jdoss-wireguard-epel-7.reposudo amazon-linux-extras install epelsudo yum install wireguard-dkms wireguard-tools# 开启ipv4流量转发echo &quot;net.ipv4.ip_forward = 1&quot; &gt;&gt; /etc/sysctl.confsysctl -p# 或者sysctl -w net.ipv4.ip_forward=1# 创建并进入WireGuard文件夹mkdir -p /etc/wireguard &amp;&amp; chmod 0777 /etc/wireguardcd /etc/wireguard# 生成服务器密钥对umask 077wg genkey | tee privatekey | wg pubkey &gt; publickey 使用命令创建配置文件1234567891011121314ip link add dev wg0 type wireguard # ip link delete dev wg0 type wireguardip address add dev wg0 192.168.2.1/24wg set wg0 private-key ./privatekeywg setconf wg0 wg0.confip link set wg0 up# 添加客户端配置wg set wg0 peer &lt;client-publickey&gt; allowed-ips 192.168.2.2/24# 查看运行状态wg# 查看配置文件wg showconf 手动创建配置文件12345678910111213141516171819202122[Interface]Address = 192.168.2.1/24 #wg0 内网ip地址段 任意的内网地址SaveConfig = true # 设为true之后，每次重启服务（stop service时）都会自动保存config# 以下是重点: 当服务启动时，通过iptables配置wg0来的流量forward到eth0# 如果你的device不是eth0而是别的名字，把下面的eth0改成别的。# 当服务停止的时候，删除相关的iptables规则PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE; ip6tables -A FORWARD -i wg0 -j ACCEPT; ip6tables -t nat -A POSTROUTING -o eth0 -j MASQUERADEPostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE; ip6tables -D FORWARD -i wg0 -j ACCEPT; ip6tables -t nat -D POSTROUTING -o eth0 -j MASQUERADE ListenPort = 51820 # 随便选一个空闲的端口PrivateKey = &lt;server-privateKey&gt; #在上一步里生成的privatekey的内容# 客户端1[Peer]PublicKey = &lt;client-publicKey&gt;AllowedIPs = 192.168.2.2/24# 客户端2[Peer]PublicKey = &lt;client-publicKey&gt;AllowedIPs = 192.168.2.3/24 客户端配置文件12345678910[Interface]Name = awsPrivateKey = &lt;client-privateKey&gt;PublicKey = S4bzrVS8PBvuXxowqOzB5uNGrd4WQY74UJ388Z1XshQ=Address = 192.168.2.2/24[Peer]PublicKey = &lt;server-publicKey&gt;Endpoint = ip:port #服务器ip:端口AllowedIPs = 0.0.0.0/0 启动/停止123456cd /etc/wireguardwg-quick up wg0wg-quick down wg0# 设置开机启动systemctl enable wg-quick@wg0 客户端配置Android客户端配置 Name: 自己起个名字 点击GENERATE，它会自动生成Private/Public Key 点击Public key，它会把public key复制到剪贴版，之后要用到。 Addresses: 填跟服务器端的配置里同样网段的IP，比如说192.168.2.2/24 （虚拟内网ip地址，/24是子网掩码，等于24位1，ip地址不能重复） DNS: 8.8.8.8，这个应该是可选的 添加一个Peer，在Peer里： Public key: 填服务器端生成的public key Allowed IPs: 填0.0.0.0/0，允许所有IP（这个很重要，否则即使连上了VPN，也无法访问别的网站） Endpoint: 填服务器的IP:端口（端口是服务器监听的端口）]]></content>
+      <categories>
+        <category>vpn</category>
+      </categories>
+      <tags>
+        <tag>wireguard</tag>
+        <tag>centos7</tag>
+        <tag>aws linux2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[v2ray安装]]></title>
+    <url>%2F2019%2F06%2F13%2Fvpn-v2ray%2F</url>
+    <content type="text"><![CDATA[一键安装v2ray服务器 安装1234bash &lt;(curl -s -L https://git.io/v2ray.sh)# 命令v2ray]]></content>
+      <categories>
+        <category>v2ray</category>
+      </categories>
+      <tags>
+        <tag>vpn</tag>
+        <tag>v2ray</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[aws ec2服务器]]></title>
+    <url>%2F2019%2F06%2F11%2Fcloud-server-aws%2F</url>
+    <content type="text"><![CDATA[切换root用户登录12345678910111213141516171819# 密钥证书放到了~/.ssh目录cd ~/.ssh# 把证书权限修改为400chmod 400 aws-tokyo.pem# ssh远程连接ssh -i aws-tokyo.pem ec2-user@ec2-3-113-37-231.ap-northeast-1.compute.amazonaws.com# root用户设置密码sudo passwd root# 切换到root用户su root# 修改 PasswordAuthentication 为 yes vim /etc/ssh/sshd_config# 重启服务器]]></content>
+      <categories>
+        <category>aws</category>
+      </categories>
+      <tags>
+        <tag>cloudserver</tag>
+        <tag>aws</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ssr服务器安装脚本]]></title>
+    <url>%2F2019%2F05%2F08%2Fssr-server%2F</url>
+    <content type="text"><![CDATA[使用ssr一键安装脚本搭建ssr服务器 doubi一键安装脚本安装 下载安装脚本 1wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh 执行安装 12chmod +x ssr.sh./ssr.sh 配置常用命令卸载1./ssr.sh uninstall 秋水一键安装脚本安装 下载安装脚本 1wget –no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh 执行安装 12chmod +x shadowsocks-all.sh./shadowsocks-all.sh 配置常用命令1234567891011121314151617181920212223# Shadowsocks-libev 版：/etc/init.d/shadowsocks-libev start/etc/init.d/shadowsocks-libev stop/etc/init.d/shadowsocks-libev restart/etc/init.d/shadowsocks-libev status# Shadowsocks-Python 版：/etc/init.d/shadowsocks-python start/etc/init.d/shadowsocks-python stop/etc/init.d/shadowsocks-python restart/etc/init.d/shadowsocks-python status# ShadowsocksR 版：/etc/init.d/shadowsocks-r start/etc/init.d/shadowsocks-r stop/etc/init.d/shadowsocks-r restart/etc/init.d/shadowsocks-r status# Shadowsocks-Go 版：/etc/init.d/shadowsocks-go start/etc/init.d/shadowsocks-go stop/etc/init.d/shadowsocks-go restart/etc/init.d/shadowsocks-go status 卸载1./shadowsocks-all.sh uninstall 安装bbr加速1wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh &amp;&amp; chmod +x bbr.sh &amp;&amp; bash bbr.sh 安装kcptun加速器 参考https://ssr.tools/588 123wget --no-check-certificate https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.shchmod +x ./kcptun.sh./kcptun.sh centos关闭防火墙12345678# 查看防火墙状态firewall-cmd --state# 关闭防火墙systemctl stop firewalld.service# 禁止开机启动systemctl disable firewalld.service 参考 https://ssr.tools/373]]></content>
+      <categories>
+        <category>ssr</category>
+      </categories>
+      <tags>
+        <tag>ssr</tag>
+        <tag>ss</tag>
+        <tag>bbr</tag>
+        <tag>kcptun</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jenkins]]></title>
+    <url>%2F2019%2F03%2F05%2Fjenkins%2F</url>
+    <content type="text"><![CDATA[安装 centos7系统安装 123sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.reposudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.keyyum install jenkins 官方安装比较慢，使用下面的国内地址 12wget https://mirrors.tuna.tsinghua.edu.cn/jenkins/redhat-stable/jenkins-2.150.3-1.1.noarch.rpmrpm -ivh jenkins-2.150.3-1.1.noarch.rpm 配置 修改端口 1vim /etc/sysconfig/jenkins 启动1234service jenkins start | stop | restart# 设置开机启动sudo chkconfig jenkins on]]></content>
+      <categories>
+        <category>jenkins</category>
+      </categories>
+      <tags>
+        <tag>CI</tag>
+        <tag>jenkins</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[editorconfig]]></title>
+    <url>%2F2018%2F08%2F07%2Feditor-editorconfig%2F</url>
+    <content type="text"><![CDATA[使用editorconfig配置文件统一代码规范，vs code 默认不支持.editconfig文件，需要安装EditorConfig插件 安装EditorConfig插件1234# 打开命令窗口command + shift + p# 搜索editorconfig editorconfig配置 配置 值 描述 indent_style tab space Indentation Style indent_size an integer tab Indentation Size (in single-spaced characters) tab_width a positive integer (defaults indent_size when indent_size is a number) Width of a single tabstop character end_of_line lf crlf cr Line ending file format (Unix, DOS, Mac) charset utf-8 File character encoding trim_trailing_whitespace true false Denotes whether whitespace is allowed at the end of lines insert_final_newline true false Denotes whether file should end with a newline]]></content>
+      <categories>
+        <category>editor</category>
+      </categories>
+      <tags>
+        <tag>editor</tag>
+        <tag>editorconfig</tag>
+        <tag>代码规范</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[postcss-stylelint]]></title>
+    <url>%2F2018%2F08%2F04%2Fpostcss-stylelint%2F</url>
+    <content type="text"><![CDATA[在webpack中使用stylelint规范css写法 在editor中安装stylelintvscode安装stylelint插件12341、command + shift + p 打开命令窗口2、输入Install Extensions3、搜索 @sort:installs stylelint# 安装stylelint插件 配置插件设置user setting或者workspace setting，关闭系统对css的校验 123&quot;css.validate&quot;: false,&quot;less.validate&quot;: false,&quot;scss.validate&quot;: false 配置文件1234567# 安装配置规则npm install stylelint-config-standard --save-dev# 新建配置文件.stylelintrc&#123; &quot;extends&quot;: &quot;stylelint-config-standard&quot;&#125; 格式化文件1stylelint --fix 安装格式化插件vscode安装 stylefmt webpack集成stylelint安装stylelint1npm install stylelint -D 修改postcss配置文件123456789module.exports = &#123; plugins: [ require(&apos;autoprefixer&apos;)(&#123; browsers: [&apos;last 5 versions&apos;] &#125;), require(&apos;cssnano&apos;)(&#123;&#125;), require(&apos;stylelint&apos;)(&#123;&#125;) ]&#125;]]></content>
+      <categories>
+        <category>css</category>
+        <category>postcss</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>postcss</tag>
+        <tag>stylelint</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[postcss-cssnano]]></title>
+    <url>%2F2018%2F08%2F03%2Fpostcss-cssnano%2F</url>
+    <content type="text"><![CDATA[cssnano使用 在webpack中使用cssnano压缩css代码，首先需要安装postcss-loader 安装1npm i cssnano -D 配置123456789# postcss.config.jsmodule.exports = &#123; parser: &apos;sugarss&apos;, plugins: &#123; &apos;postcss-import&apos;: &#123;&#125;, &apos;postcss-preset-env&apos;: &#123;&#125;, &apos;cssnano&apos;: &#123;&#125; &#125;&#125;]]></content>
+      <categories>
+        <category>css</category>
+        <category>postcss</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>postcss</tag>
+        <tag>cssnano</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jekyll编译静态页面]]></title>
+    <url>%2F2018%2F07%2F26%2Fgithub-jekyll-deploy%2F</url>
+    <content type="text"><![CDATA[使用jekyll编译github的gh-pages生成静态页面 安装jekyll121. gem install bundler2. bundler install 启动本地服务1bundle exec jekyll serve 生成静态页面1bundle exec jekyll build]]></content>
+      <categories>
+        <category>jekyll</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>jekyll</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nginx常用配置]]></title>
+    <url>%2F2018%2F07%2F25%2Fnginx-tutorial%2F</url>
+    <content type="text"><![CDATA[nginx 教程 nginx伪静态规则 隐藏html文件后缀1234567# 文件不存在时访问.html文件location / &#123; if (!-e $request_filename) &#123; rewrite ^(.*)$ /$1.html last; break; &#125;&#125; 开启gzip123456789gzip on;gzip_min_length 2k;gzip_buffers 4 16k;gzip_http_version 1.1;gzip_comp_level 6;gzip_types text/plain application/javascript application/x-javascript image/jpeg image/gif image/png text/javascript text/css application/xml;gzip_vary on;gzip_proxied expired no-cache no-store private auth;gzip_disable &quot;MSIE [1-6]\.&quot;;]]></content>
+      <categories>
+        <category>nginx</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+        <tag>tutorial</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[docsify]]></title>
+    <url>%2F2018%2F07%2F22%2Ftools-docs-docsify%2F</url>
+    <content type="text"><![CDATA[编写api文档工具介绍 docsifygitbook]]></content>
+      <categories>
+        <category>doc</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+        <tag>doc</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[scp命令]]></title>
+    <url>%2F2018%2F07%2F18%2Flinux-cmd-scp%2F</url>
+    <content type="text"><![CDATA[复制文件夹到远程服务器1scp -r ./dist root@47.104.230.189:/usr/local/apache4/htdocs/able-static/]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+        <tag>scp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[eclipse打开npm依赖包卡死]]></title>
+    <url>%2F2018%2F06%2F28%2Ftools-eclipse-node-modules%2F</url>
+    <content type="text"><![CDATA[前端工程安装了很多npm的包，使用eclipse开发时导致eclipse经常卡死的解决办法： 把node_modules目录过滤掉 把node_modules从svn版本控制中忽略掉 过滤node_modules目录右键单击工程，选择Properties-&gt;Resourse-&gt;Resource Filters，点击Add按钮添加要过滤的目录 svn忽略node_modules目录右键单击工程，选择Term-&gt;设置属性 属性名选择svn:ignore，内容输入node_modules]]></content>
+      <categories>
+        <category>工具</category>
+        <category>eclipse</category>
+      </categories>
+      <tags>
+        <tag>eclipse</tag>
+        <tag>npm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git常用总结]]></title>
+    <url>%2F2018%2F06%2F15%2Fgit-tutorial%2F</url>
+    <content type="text"><![CDATA[配置配置文件 配置文件有三个级别 仓库&gt;全局&gt;系统 仓库配置仓库级别配置文件在.git目录 查看仓库级别的配置1git config --local -l 全局配置全局配置文件在用户目录下，.gitconfig文件 查看全局配置项1git config --global -l 系统配置系统级别的配置在git的安装目录 记录用户名、密码1234git config --global credential.helper store# 修改用户名密码git config --global credential.helper username 设置代理12git config --global http.proxy http://127.0.0.1:808git config --global https.proxy https://127.0.0.1:808 删除配置1git config --unset xxx 拉取远程仓库分支1git pull &lt;远程库名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt; 问题处理warning: http.proxy has multiple values1git config --unset-all http.proxy]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[拷贝.git目录]]></title>
+    <url>%2F2018%2F06%2F15%2Fgit-copy-git%2F</url>
+    <content type="text"><![CDATA[有时候我们需要从远程仓库把代码下载到一个已经存在的目录，git clone的时候会报错，可以先把版本信息下载到一个空目录然后复制到当前目录，然后恢复到最新版本，这样当前目录就会包含版本信息。 12345#当前在workspace目录git clone --no-checkout 远程仓库地址 tmpmv tmp/.git ./rm -rf tmpgit reset --hard HEAD 由于window、mac、linux系统的换行符不一样，导致mac系统下载下来的代码，git status的时候显示很多文件有修改，可以修改mac系统换行符的设置 1git config --global core.autocrlf false]]></content>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[webpack image-webpack-loader]]></title>
+    <url>%2F2018%2F05%2F31%2Fimage-webpack-loader%2F</url>
+    <content type="text"><![CDATA[使用image-webpack-loader压缩图片安装1npm install image-webpack-loader --save-dev 配置123456789101112loaders: [&#123; test: /\.(gif|png|jpe?g|svg)$/i, use: [ &apos;file-loader&apos;, &#123; loader: &apos;image-webpack-loader&apos;, options: &#123; bypassOnDebug: true, &#125;, &#125;, ],&#125;] 可选配置123456789101112131415161718192021222324252627282930loaders: [&#123; test: /\.(gif|png|jpe?g|svg)$/i, use: [ &apos;file-loader&apos;, &#123; loader: &apos;image-webpack-loader&apos;, options: &#123; mozjpeg: &#123; progressive: true, quality: 65 &#125;, // optipng.enabled: false will disable optipng optipng: &#123; enabled: false, &#125;, pngquant: &#123; quality: &apos;65-90&apos;, speed: 4 &#125;, gifsicle: &#123; interlaced: false, &#125;, // the webp option will enable WEBP webp: &#123; quality: 75 &#125; &#125; &#125;, ],&#125;] 使用imagemin-webpack-plugin压缩没有被file-loader处理的图片安装1npm install imagemin-webpack-plugin --save-dev 配置1234567891011import ImageminPlugin from &apos;imagemin-webpack-plugin&apos;module.exports = &#123; plugins: [ // Copy the images folder and optimize all the images new CopyWebpackPlugin([&#123; from: &apos;images/&apos; &#125;]), new ImageminPlugin(&#123; test: /\.(jpe?g|png|gif|svg)$/i &#125;) ]&#125;]]></content>
+      <categories>
+        <category>webpack</category>
+      </categories>
+      <tags>
+        <tag>前端工具</tag>
+        <tag>webpack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[getusermedia demo]]></title>
+    <url>%2F2018%2F05%2F24%2Fh5-getusermedia%2F</url>
+    <content type="text"><![CDATA[最近研究了一下getusermedia的使用方法，网上找的不错的方法，不支持IE浏览器。 demo1使用的是MediaRecorder方法录音(safari不支持)demo1 demo2使用的时audiocontext方法实现录音audiocontext]]></content>
+      <categories>
+        <category>前端技术</category>
+      </categories>
+      <tags>
+        <tag>h5</tag>
+        <tag>getusermedia</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[audio标签自定义控制按钮]]></title>
+    <url>%2F2018%2F05%2F24%2Fh5-audio-customcontroller%2F</url>
+    <content type="text"><![CDATA[参考文章：https://www.jianshu.com/p/653a860b8dcb]]></content>
+      <categories>
+        <category>前端技术</category>
+      </categories>
+      <tags>
+        <tag>h5</tag>
+        <tag>audio</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[gogs访问数据库1045错误]]></title>
+    <url>%2F2018%2F05%2F09%2Fgogs-mysql-1045%2F</url>
+    <content type="text"><![CDATA[gogs有时候会出现访问数据库没有权限的问题。错误日志1Error 1045: Access denied for user &apos;gogs&apos;@&apos;localhost&apos; (using password: YES) 临时解决办法：给用户重新赋一下权限。]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>gogs</tag>
+        <tag>1045</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nginx proxy_pass 使用]]></title>
+    <url>%2F2018%2F05%2F09%2Fnginx-proxy-pass%2F</url>
+    <content type="text"><![CDATA[在nginx中配置proxy_pass代理转发时，如果在proxy_pass后面的url加/，表示绝对根路径；如果没有/，表示相对路径，把匹配的路径部分也给代理走。 假设下面四种情况分别用 http://192.168.1.1/proxy/test.html 进行访问。 第一种123location /proxy/ &#123; proxy_pass http://127.0.0.1/;&#125; 代理到URL：http://127.0.0.1/test.html 第二种（相对于第一种，最后少一个 / ）123location /proxy/ &#123; proxy_pass http://127.0.0.1;&#125; 代理到URL：http://127.0.0.1/proxy/test.html 第三种123location /proxy/ &#123; proxy_pass http://127.0.0.1/aaa/;&#125; 代理到URL：http://127.0.0.1/aaa/test.html 第四种（相对于第三种，最后少一个 / ）123location /proxy/ &#123; proxy_pass http://127.0.0.1/aaa;&#125; 代理到URL：http://127.0.0.1/aaatest.html 参考：https://blog.csdn.net/zhongzh86/article/details/70173174]]></content>
+      <categories>
+        <category>nginx</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+        <tag>proxy_pass</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[nginx使用]]></title>
+    <url>%2F2018%2F05%2F03%2Fwebserver-nginx%2F</url>
+    <content type="text"><![CDATA[try_files语法]]></content>
+      <categories>
+        <category>nginx</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+        <tag>server</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git hooks实现自动部署]]></title>
+    <url>%2F2018%2F05%2F03%2Fgit-hooks%2F</url>
+    <content type="text"><![CDATA[使用git hooks实现远程仓库的本地部署git push代码以后自动部署到本地的web服务器目录下。修改仓库下面的post-receive文件1234# --work-tree是设置工作目录# --git-dir设置仓库的本地路径# -f 强制执行git --work-tree=/www/wwwroot/xxx/ --git-dir=/var/opt/gogs/gogs-repositories/lijiangwei/blog.git checkout -f 参考：https://blog.csdn.net/zstack_org/article/details/53100257]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>hooks</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[pm2使用笔记]]></title>
+    <url>%2F2018%2F05%2F02%2Fnode-pm2%2F</url>
+    <content type="text"><![CDATA[简介 pm2=P(rocess) M(anager)2，是可以用于生产环境的Nodejs的进程管理工具，并且它内置一个负载均衡。它不仅可以保证服务不会中断一直在线，并且提供0秒reload功能，还有其他一系列进程管理、监控功能。并且使用起来非常简单。 安装1npm install -g pm2 使用启动项目1pm2 start app.js 显示所有进程状态1pm2 list 监视所有进程1pm2 monit 显示所有进程日志1pm2 logs 停止所有进程1pm2 stop all 重启所有进程1pm2 restart all 停止指定的进程1pm2 stop 0 重启指定的进程1pm2 restart 0 杀死全部进程1pm2 delete all 杀死指定的进程1pm2 delete 0 启动程序增加参数–后面增加参数1pm2 start http-server -- -p 8080 -d false]]></content>
+      <categories>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+        <tag>pm2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[ckeditor集成上传图片功能]]></title>
+    <url>%2F2018%2F04%2F27%2Fckeditor-upload-image%2F</url>
+    <content type="text"><![CDATA[增加左右对齐功能下载时增加Justify、Enhanced Image插件 上传图片功能修改配置文件ckedirot/plugins/image/dialogs/images.js12345# 修改下面的hidden值修改为0id:&quot;Upload&quot;,hidden:0# 删除预览文字config.image_previewText后面的值删除]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>ckeditor</tag>
+        <tag>upload img</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[box-shadow语法]]></title>
+    <url>%2F2018%2F04%2F26%2Fcss-box-shadow%2F</url>
+    <content type="text"><![CDATA[基本语法是{box-shadow:[inset] x-offset y-offset blur-radius spread-radiuscolor} 对象选择器 {box-shadow:[投影方式] X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色} 用法：https://www.cnblogs.com/wcm19910616/articles/5602816.html]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>box-shadow</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[前端开发常用工具]]></title>
+    <url>%2F2018%2F04%2F25%2Fhtml-tools%2F</url>
+    <content type="text"><![CDATA[css相关 RGBA&amp;Hex 颜色转换 工具类 正则表达式]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>h5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[上传图片预览]]></title>
+    <url>%2F2018%2F04%2F24%2Fhtml-uploadimg-preview%2F</url>
+    <content type="text"><![CDATA[图片上传前预览本地图片的几种方法，假设input[type=file]的id是fileupload，预览的img标签的id是preview。 使用FileReader 12345678if(window.FileReader) &#123; var file = document.getElementById(&quot;fileupload&quot;); var fr = new FileReader(); fr.onloadend = function(e) &#123; document.getElementById(&quot;preview&quot;).src = e.target.result; &#125; fr.readAsDataURL(file.files[0]);&#125; 使用createObjectURL 123var file = document.getElementById(&quot;fileupload&quot;);var url = window.URL.createObjectURL(file.files[0]);document.getElementById(&quot;preview&quot;).src = url; IE8、9使用滤镜 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt; &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt; &lt;style type=&quot;text/css&quot;&gt; .image_container &#123; width: 48px; height: 48px; position: relative; &#125; &lt;/style&gt; &lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.min.js&quot;&gt;&lt;/script&gt; &lt;script language=&quot;javascript&quot;&gt; $(function() &#123; $(&quot;#file_upload&quot;).change(function() &#123; var $file = $(this); var fileObj = $file[0]; var windowURL = window.URL || window.webkitURL; var dataURL; var $img = $(&quot;#preview&quot;); if(fileObj &amp;&amp; fileObj.files &amp;&amp; fileObj.files[0])&#123; dataURL = windowURL.createObjectURL(fileObj.files[0]); $img.attr(&apos;src&apos;,dataURL); &#125;else&#123; //IE8、9获取图片真实路径需要document.selection.createRange().text $file[0].select(); $file[0].blur(); dataURL = document.selection.createRange().text // dataURL = $file.val(); var imgObj = document.getElementById(&quot;preview&quot;); // 两个坑: // 1、在设置filter属性时，元素必须已经存在在DOM树中，动态创建的Node，也需要在设置属性前加入到DOM中，先设置属性在加入，无效； // 2、src属性需要像下面的方式添加，上面的两种方式添加，无效； imgObj.style.filter = &quot;progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)&quot;; imgObj.filters.item(&quot;DXImageTransform.Microsoft.AlphaImageLoader&quot;).src = dataURL; &#125; &#125;); &#125;); &lt;/script&gt;&lt;/head&gt;&lt;body&gt; &lt;div id=&quot;demo&quot;&gt; &lt;input id=&quot;file_upload&quot; type=&quot;file&quot; /&gt; &lt;div class=&quot;image_container&quot;&gt; &lt;img id=&quot;preview&quot; width=&quot;60&quot; height=&quot;60&quot;&gt; &lt;/div&gt; &lt;/div&gt;&lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+        <tag>img</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CSS边框问题]]></title>
+    <url>%2F2018%2F04%2F23%2Fcss-image-background-image%2F</url>
+    <content type="text"><![CDATA[最近开发一个页面使用background-image属性作为img标签的背景，img没有设置src属性，图片一直显示一个边框，怎么也去不掉。示例 解决办法后来在网上找到解决方法，图片没有设置src属性，浏览器会当作没有图片处理，会默认给一个边框，解决版本是给图片src一个空白的图片。这种情况最好不要使用img标签，更换为其他标签。]]></content>
+      <categories>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[为什么要建博客]]></title>
+    <url>%2F2018%2F04%2F21%2Fstart%2F</url>
+    <content type="text"><![CDATA[周末醒来外面下着小雨，感觉很困、很累。回想一下这周的经过，白天、晚上都在研究hexo，耽误了自己的工作也没啥成果，把自己搞得很疲惫，所以想把这些感想记录下来，以后的生活也好有个借鉴。 为什么要建这个博客之前研究了一些东西，没有做过笔记、整理。过段时间再用的时候已经忘了，还要重新搜索、整理，这种情况重复了很多次。所以有了建立一个博客的想法，暂时还不清楚要写那些内容，但重点应该是记录研究过的知识点，不能花太多时间，权当记笔记吧，最重要的是先行动起来。 误区建立这个博客的初衷是为了记录东西，重点关注的应该是内容，本不应该关注一些外在的东西的。刚开始的时候纠结于选择哪个博客平台号，在网上乱搜一通，一直在比较哪个好，比了一天也没结果，后来我想自己建博客只是为了记录一些知识，随便选一个就行了，就决定使用hexo建这个静态博客了，先试用一段时间再说。选了hexo以后我又在主题和个性化上纠结了很长时间，花了一周时间研究主题和个性化，才有了前面的两篇文章，Hexo使用教程 和Hexo集成Travis CI，当时一周白天、晚上啥也没干就研究这个，晚上还整到1、2点搞的自己很疲惫，东西能完以后我问自己为啥花一周时间搞这些不太重要的东西呢，我写博客的初衷只是为了记录一下点东西，干嘛太注重这个。我重新下载了一份next6.x的主题覆盖了原来的版本，让一切回归内容上来，以后不能太关注主题这些东西，人还是太容易被其他的东西分散注意力。 应该写什么内容写第一篇 Hexo使用教程 的时候，当时是刚学着用hexo，就在网上搜了很多教程，自己实验了一下没问题的就把内容复制了过来，花了一天多的时间整理出来了这篇文章，晚上看的时候觉得内容太多了，把自己觉得没用的东西删掉了，只留下了自己觉的以后能用到的。写第二篇Hexo集成Travis CI的时候我还是按照第一篇的写法写的，写到一半的时候我实在写不下去了，我感觉这样太浪费时间了，网上已经有的没问题的东西自己为啥还要再写一遍呢，放个链接不就可以了，以后用到的时候也可以直接打开看不用再到处搜索了，就把写过的内容全部删除了，只留下一个链接，然后把自己感兴趣的链接里没有的东西写到了后面。 不要重复造轮子，以后还是写一些遇到的问题、问题的解决思路和方法吧，时刻提醒自己写这个的初衷是什么，不要花费太多的时间。]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>吐槽</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Github徽章]]></title>
+    <url>%2F2018%2F04%2F20%2Fgithub-project-badge%2F</url>
+    <content type="text"><![CDATA[常用的徽章: https://github.com/boennemann/badges Trasiv CI编译徽章 1[![](https://travis-ci.org/lijiangwei/homepage.svg?branch=master)](https://travis-ci.org/lijiangwei/homepage/) 仓库状态 Stability: 0 - Deprecated 1[![deprecated](http://badges.github.io/stability-badges/dist/deprecated.svg)](http://github.com/badges/stability-badges) Stability: 1 - Experimental 1[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges) Stability: 2 - Unstable 1[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges) Stability: 3 - Stable 1[![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges) Stability: 4 - Frozen 1[![frozen](http://badges.github.io/stability-badges/dist/frozen.svg)](http://github.com/badges/stability-badges) Stability: 5 - Locked 1[![locked](http://badges.github.io/stability-badges/dist/locked.svg)](http://github.com/badges/stability-badges) 开源协议徽章 1![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103) 项目依赖]]></content>
+      <tags>
+        <tag>Github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo集成Travis CI]]></title>
+    <url>%2F2018%2F04%2F19%2Fhexo-travis-ci%2F</url>
+    <content type="text"><![CDATA[travis的配置和使用参考：http://dmego.me/2017/10/13/deylpoy-hexo-with-TravisCI.html 增加同步推送到giteegitee也有令牌，但是gitee的令牌暂时不支持像github的token那样有推送代码的权限，gitee的推送有两种方式： 通过https协议使用用户名、密码推送 https://用户名:密码@gitee.com/用户/仓库名.git 通过ssh协议，使用私钥文件免密推送 git @ gitee.com/用户/仓库名.git 由于代码都是公开的，不能把密码和ssh私钥直接放到代码里，两种方式都需要通过trasiv提供的加密服务，对密码或者私钥文件进行加密。下面是加密和配置的流程： 登录trasiv命令行trasiv命令行需要ruby环境，建议在linux环境操作，先安装ruby和ruby的gem。12# 安装travis命令行gem install travis 在window环境操作一直报ssl证书错误（网上有解决办法，我没有试），我是在阿里云的服务器上完成的加密。 登录travis的命令行，中间会让输入github的用户名、密码登录travis1234567891011travis login #登录命令We need your GitHub login to identify you.This information will not be sent to Travis CI, only to api.github.com.The password will not be displayed.Try running with --github-token or --auto if you don&apos;t want to enter your password anyway.# 使用github的用户名、密码登录Username: xxx@xxx.xxxPassword for xxx@xxx.xxx: ***Successfully logged in as demo! 加密密码加密可以参考travis官网的文档https://docs.travis-ci.com/user/encrypting-files/如果密码中有特殊符号，需要转义：例如@需要转成%40 首先从github的仓库clone一份代码到本地，确保根目录有.travis.yml文件，下面的命令都是在代码的根目录操作的。12# gitee_password变量名，xxx是gitee的用户名密码$ travis encrypt gitee_password=xxx --add .travis.yml文件的globar会增加一个密文secure字段 修改.travis.yml文件，增加推送gitee的代码12345678910# GE_REF和GH_REF一样是gitee要推送的仓库地址 gitee.com/用户/仓库名.gitafter_script:- cd ./public- git init- git config user.name &quot;用户&quot;- git config user.email &quot;xxx@xxx.com&quot;- git add .- git commit -m &quot;Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER&quot;- git push --force --quiet &quot;https://$&#123;GH_TOKEN&#125;@$&#123;GH_REF&#125;&quot; master:master- git push --force &quot;https://用户:$&#123;gitee_password&#125;@$&#123;GE_REF&#125;&quot; master:master 把修改后的.travis.yml文件推送到github服务器上就可以了。 加密ssh私钥文件也需要先登录trasiv的命令行公钥、私钥文件的生成和使用参考gitee帮助文档 1234567891011# 例如私钥文件是 ~/.ssh目录下的id_rsatravis encrypt-file ~/.ssh/id_rsa --add# 下面是命令行打印的日志Detected repository as xxx/xxx, is this correct? |yes| yesencrypting ~/.ssh/id_rsa for xxx/xxxstoring result as id_rsa.encstoring secure env variables for decryptionMake sure to add id_rsa.enc to the git repository.Make sure not to add ~/.ssh/id_rsa to the git repository.Commit all changes to your .travis.yml. .travis.yml文件会增加几行配置信息123before_install: - openssl aes-256-cbc -K $encrypted_d89376f3278d_key -iv $encrypted_d89376f3278d_iv -in id_rsa.enc -out ~\/.ssh/id_rsa -d 同时根目录会增加一个加密后的文件id_rsa.enc .travis.yml文件增加推送到gitee的代码12345678910# GE_REF的配置是 gitee.com:用户名/仓库名.gitafter_script:- cd ./public- git init- git config user.name &quot;用户&quot;- git config user.email &quot;xxx@xxx.com&quot;- git add .- git commit -m &quot;Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER&quot;- git push --force --quiet &quot;https://$&#123;GH_TOKEN&#125;@$&#123;GH_REF&#125;&quot; master:master- git push --force &quot;git@$&#123;GE_REF&#125;&quot; master:master 把修改后的.travis.yml文件和新增的id_rsa.enc文件推送到服务器。 这个我测试的时候报错12$ openssl aes-256-cbc -K $encrypted_cdd288e44784_key -iv $encrypted_cdd288e44784_iv -in id_rsa.enc -out ~\/.ssh/id_rsa -d~/.ssh/id_rsa: No such file or directory 这种方式应该是可行的，目前暂时没有时间研究这个问题，后续再解决。 解决ssh密钥push代码报错travis encrypt-file ~/.ssh/id_rsa --add命令增加的代码，把-out ~后面的转义符去掉，修改为123before_install: - openssl aes-256-cbc -K $encrypted_d89376f3278d_key -iv $encrypted_d89376f3278d_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d 提交代码后重新测试，执行到git push的时候会提示无法确认gitee.com的真实性，需要用户输入yes确认，但是travis不是交互式的，不接收输入。12The authenticity of host &apos;gitee.com (120.55.226.24)&apos; can&apos;t be established.Are you sure you want to continue connecting (yes/no)? 解决这个问题的方法参考travis文档: https://docs.travis-ci.com/user/ssh-known-hosts/ 有两种方法： 在.travis.yml配置文件中增加下面的配置 123addons: ssh_known_hosts: - gitee.com 在.travis.yml配置文件中把gitee.com服务器ssh的公钥写到known_hosts文件中 1- echo &apos;Key&apos; &gt;&gt; $HOME/.ssh/known_hosts 把key替换成gitee.com的公钥，key的获取方法参考上面的travis文档的链接。 至此使用travis同时向github和gitee推送代码的问题已经解决，同时还可以增加自己其他的服务器。 部署中遇到的其他问题 travis部署的页面是空页面hexo g的时候报错12345$ hexo gINFO Start processingINFO Files loaded in 392 msWARN No layout: categories/index.htmlWARN No layout: tags/index.html 原因是next主题的代码没有提交到源码中，git clone下载的代码不全，重新提交代码后问题解决。 参考：https://www.cnblogs.com/dmego/p/7664877.htmlhttp://notes.iissnan.com/2016/publishing-github-pages-with-travis-ci/https://segmentfault.com/a/1190000011218410]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>travis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo使用教程]]></title>
+    <url>%2F2018%2F04%2F18%2Fhow-to-use-hexo%2F</url>
+    <content type="text"><![CDATA[Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 安装及使用参考官网教程：中文官网 主题设置推荐使用NexT主题next使用教程 设置中文修改配置文件(_config.yml)1language: zh-Hans Next个性化配置搜索功能推荐使用Local Search作为站内搜索，搜索速度快，同时比较简洁，启用方法如下： 安装插件 1npm install hexo-generator-searchdb --save 更改配置文件在配置文件的任意位置增加下面的内容： 12345search: path: search.xml field: post format: html limit: 10000 更改主题的配置文件开启local search做为站内搜索 123# Local searchlocal_search: enable: true 设置动态背景效果图从下面选择喜欢的背景123456789101112#修改主题配置文件# Canvas-nestcanvas_nest: true# three_wavesthree_waves: false# canvas_linescanvas_lines: false# canvas_spherecanvas_sphere: false 点击出现桃心效果图下载love.js保存到/themes/next/source/js/src，在\themes\next\layout\_layout.swig文件末尾进入js文件12&lt;!-- 页面点击小红心 --&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/love.js&quot;&gt;&lt;/script&gt; 修改链接样式在themes\next\source\css\_common\components\post\post.styl在末尾添加如下css样式：1234567891011// 文章内链接文本样式.post-body p a&#123; color: #0593d3; border-bottom: none; border-bottom: 1px solid #0593d3; &amp;:hover &#123; color: #fc6423; border-bottom: none; border-bottom: 1px solid #fc6423; &#125;&#125; 修改标签样式修改模版/themes/next/layout/_macro/post.swig，把rel=&quot;tag&quot;&gt;#替换为&lt;i class=&quot;fa fa-tag&quot;&gt;&lt;/i&gt; 配置页面访问量修改themes/next目录下的_config.yml配置文件(安装的next主题)1234567891011121314151617# Show PV/UV of the website/page with busuanzi.# Get more information on http://ibruce.info/2015/04/04/busuanzi/busuanzi_count: # count values only if the other configs are false enable: true # custom uv span for the whole site site_uv: false site_uv_header: &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; 访问人数 site_uv_footer: # custom pv span for the whole site site_pv: true site_pv_header: &lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt; 总访问量 site_pv_footer: 次 # custom pv span for one page only page_pv: true page_pv_header: &lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt; 浏览 page_pv_footer: 次 配置百度统计 申请百度统计的账号、配置域名申请地址：https://tongji.baidu.com/web/welcome/login账号域名填写自己github pages地址：yourname.github.io 修改next主题的配置文件只需要配置百度统计的Analytics ID 123# theme/next/_config.yml文件# Baidu Analytics IDbaidu_analytics: 726d0dd15533fd165eb3a61c78edd605 集成Gitment评论系统(废弃)参考：https://zonghongyan.github.io/2017/06/29/201706292034/ 注意点： githubID输入的是ower，github的用户名，在gitment.swig中取的值，修改gitment.swig中id的值，默认为window.location.href，修改为提交issur的仓库id，例如：4849199，否则提交comment的时候可能会报错1https://api.github.com/repos/xxx/xxx.github.io/issues 422 (Unprocessable Entity) 配置打赏把收款二维码发到source/images文件夹下，打开主题的_config.yml文件12345# Rewardreward_comment: 您的支持将鼓励我继续创作！#wechatpay: /images/wechatpay.jpgalipay: /images/alipay.jpg#bitcoin: /images/bitcoin.png 配置RSS 安装插件 1npm install hexo-generator-feed 修改配置文件_config.yml使用插件hexo-generator-feed 123# Extensions## Plugins: https://hexo.io/plugins/plugins: hexo-generator-feed 修改next主题配置文件 1234# Set rss to false to disable feed link.# Leave rss as empty to use site&apos;s feed link.# Set rss to specific value if you have burned your feed already.rss: /atom.xml 配置友情连接修改主题的配置文件123456# Blog rollslinks_title: 友情链接#links_layout: blocklinks_layout: inlinelinks: 阿里云: https://aliyun.com 设置网站图标在比特虫制作favicon.ico图标，放到source目录下。本地测试没有生效，我把图标放到了七牛云存储空间中，访问存储空间中的图片生效了。123#使用存储空间的图片，修改主题的配置文件# Put your favicon.ico into `hexo-site/source/` directory.favicon: http://p7dkryqvb.bkt.clouddn.com/favicon.ico 修改行内代码块样式在\themes\next\source\css\_custom\custom.styl文件中增加样式123456789101112131415// Custom styles.code &#123; color: #ff7600; background: #fbf7f8; margin: 2px;&#125;// 大代码块的自定义样式.highlight, pre &#123; margin: 5px 0; padding: 5px; border-radius: 3px;&#125;.highlight, code, pre &#123; border: 1px solid #d6d6d6;&#125; 主页文章添加阴影效果\themes\next\source\css\_custom\custom.styl文件增加样式12345678// 主页文章添加阴影效果.post &#123; margin-top: 60px; margin-bottom: 60px; padding: 25px; -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5); -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);&#125; 添加热度效果打开/themes/next/layout/_macro/post.swig,在画红线的区域添加℃打开/themes/next/languages/zh-Hans.yml将画红框的改为热度修改主题配置文件123456# Show number of visitors to each article.# You can visit https://leancloud.cn get AppID and AppKey.leancloud_visitors: enable: true app_id: app_key: 填入自己的app_id和app_key，没有的话在leancloud上注册并创建应用会分配app_id、app_key。 增加字数统计安装hexo-wordcount插件1npm install hexo-wordcount --save 在/themes/next/layout/_partials/footer.swig文件尾部加上1234&lt;div class=&quot;theme-info&quot;&gt; &lt;div class=&quot;powered-by&quot;&gt;&lt;/div&gt; &lt;span class=&quot;post-count&quot;&gt;全站共&#123;&#123; totalcount(site) &#125;&#125;字&lt;/span&gt;&lt;/div&gt; 字数统计修改主题配置文件1234567# Post wordcount display settings# Dependencies: https://github.com/willin/hexo-wordcountpost_wordcount: item_text: true wordcount: true min2read: true separated_meta: true 显示进度条12345678910111213141516171819# Progress bar in the top during page loading.pace: true# Themes list:#pace-theme-big-counter#pace-theme-bounce#pace-theme-barber-shop#pace-theme-center-atom#pace-theme-center-circle#pace-theme-center-radar#pace-theme-center-simple#pace-theme-corner-indicator#pace-theme-fill-left#pace-theme-flash#pace-theme-loading-bar#pace-theme-mac-osx#pace-theme-minimal# For example# pace_theme: pace-theme-center-simplepace_theme: pace-theme-minimal 压缩代码使用gulp压缩js、css代码12npm install gulp -gnpm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save 新建gulpfile.js文件123456789101112131415161718192021222324252627282930313233var gulp = require(&apos;gulp&apos;);var minifycss = require(&apos;gulp-minify-css&apos;);var uglify = require(&apos;gulp-uglify&apos;);var htmlmin = require(&apos;gulp-htmlmin&apos;);var htmlclean = require(&apos;gulp-htmlclean&apos;);// 压缩 public 目录 cssgulp.task(&apos;minify-css&apos;, function() &#123; return gulp.src(&apos;./public/**/*.css&apos;) .pipe(minifycss()) .pipe(gulp.dest(&apos;./public&apos;));&#125;);// 压缩 public 目录 htmlgulp.task(&apos;minify-html&apos;, function() &#123; return gulp.src(&apos;./public/**/*.html&apos;) .pipe(htmlclean()) .pipe(htmlmin(&#123; removeComments: true, minifyJS: true, minifyCSS: true, minifyURLs: true, &#125;)) .pipe(gulp.dest(&apos;./public&apos;))&#125;);// 压缩 public/js 目录 jsgulp.task(&apos;minify-js&apos;, function() &#123; return gulp.src(&apos;./public/**/*.js&apos;) .pipe(uglify()) .pipe(gulp.dest(&apos;./public&apos;));&#125;);// 执行 gulp 命令时执行的任务gulp.task(&apos;default&apos;, [ &apos;minify-html&apos;,&apos;minify-css&apos;,&apos;minify-js&apos;]); hexo g生成代码后执行gulp命令优化静态资源 添加README.md文件在Hexo工程的source目录下添加一个README.md文件，修改站点配置文件_config.yml，将skip_render参数的值设置为1skip_render: README.md]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+</search>

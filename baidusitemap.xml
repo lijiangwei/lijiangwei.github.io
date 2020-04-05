@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/04/27/ckeditor-upload-image/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>ckeditor集成上传图片功能</title>
+        <pubTime>2018-04-27T10:14:59.000Z</pubTime>
+        
+        <tag>ckeditor</tag>
+         
+        <tag>upload img</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://lijiangwei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2019/06/11/cloud-server-aws/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>aws ec2服务器</title>
+        <pubTime>2019-06-11T23:16:25.000Z</pubTime>
+        
+        <tag>cloudserver</tag>
+         
+        <tag>aws</tag>
+         
+         
+           
+             
+              <breadCrumb title="aws" url="https://lijiangwei.github.io/categories/aws/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/04/26/css-box-shadow/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>box-shadow语法</title>
+        <pubTime>2018-04-26T09:41:49.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>box-shadow</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://lijiangwei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/04/23/css-image-background-image/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>CSS边框问题</title>
+        <pubTime>2018-04-23T21:30:52.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>html</tag>
+         
+         
+           
+             
+              <breadCrumb title="html" url="https://lijiangwei.github.io/categories/html/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2019/09/05/data-uri-scheme/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>Data URI Scheme</title>
+        <pubTime>2019-09-05T14:12:16.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>URI</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://lijiangwei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/08/07/editor-editorconfig/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>editorconfig</title>
+        <pubTime>2018-08-07T11:41:13.000Z</pubTime>
+        
+        <tag>editor</tag>
+         
+        <tag>editorconfig</tag>
+         
+        <tag>代码规范</tag>
+         
+         
+           
+             
+              <breadCrumb title="editor" url="https://lijiangwei.github.io/categories/editor/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2019/09/05/eslint-prettier/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>eslint + prettier统一前端代码风格</title>
+        <pubTime>2019-09-05T14:02:09.000Z</pubTime>
+        
+        <tag>eslint</tag>
+         
+        <tag>prettier</tag>
+         
+         
+           
+             
+              <breadCrumb title="eslint" url="https://lijiangwei.github.io/categories/eslint/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/06/15/git-copy-git/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>拷贝.git目录</title>
+        <pubTime>2018-06-15T22:41:33.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/05/03/git-hooks/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>git hooks实现自动部署</title>
+        <pubTime>2018-05-03T10:24:56.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+        <tag>hooks</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://lijiangwei.github.io/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/06/15/git-tutorial/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>git常用总结</title>
+        <pubTime>2018-06-15T22:59:38.000Z</pubTime>
+        
+        <tag>git</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://lijiangwei.github.io/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/07/26/github-jekyll-deploy/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>jekyll编译静态页面</title>
+        <pubTime>2018-07-26T21:24:50.000Z</pubTime>
+        
+        <tag>github</tag>
+         
+        <tag>jekyll</tag>
+         
+         
+           
+             
+              <breadCrumb title="jekyll" url="https://lijiangwei.github.io/categories/jekyll/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/04/20/github-project-badge/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>Github徽章</title>
+        <pubTime>2018-04-20T01:14:47.000Z</pubTime>
+        
+        <tag>Github</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/05/09/gogs-mysql-1045/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>gogs访问数据库1045错误</title>
+        <pubTime>2018-05-09T11:23:55.000Z</pubTime>
+        
+        <tag>gogs</tag>
+         
+        <tag>1045</tag>
+         
+         
+           
+             
+              <breadCrumb title="git" url="https://lijiangwei.github.io/categories/git/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/05/24/h5-audio-customcontroller/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>audio标签自定义控制按钮</title>
+        <pubTime>2018-05-24T17:56:42.000Z</pubTime>
+        
+        <tag>h5</tag>
+         
+        <tag>audio</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端技术" url="https://lijiangwei.github.io/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/05/24/h5-getusermedia/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>getusermedia demo</title>
+        <pubTime>2018-05-24T17:59:51.000Z</pubTime>
+        
+        <tag>h5</tag>
+         
+        <tag>getusermedia</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端技术" url="https://lijiangwei.github.io/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/04/19/hexo-travis-ci/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo集成Travis CI</title>
+        <pubTime>2018-04-19T09:48:22.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>travis</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://lijiangwei.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/04/18/how-to-use-hexo/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo使用教程</title>
+        <pubTime>2018-04-18T09:38:56.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+        <tag>Next</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="https://lijiangwei.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/04/25/html-tools/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>前端开发常用工具</title>
+        <pubTime>2018-04-25T14:04:59.000Z</pubTime>
+        
+        <tag>前端</tag>
+         
+        <tag>h5</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://lijiangwei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/04/24/html-uploadimg-preview/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>上传图片预览</title>
+        <pubTime>2018-04-24T10:12:10.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>img</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端" url="https://lijiangwei.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/05/31/image-webpack-loader/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>webpack image-webpack-loader</title>
+        <pubTime>2018-05-31T09:27:04.000Z</pubTime>
+        
+        <tag>前端工具</tag>
+         
+        <tag>webpack</tag>
+         
+         
+           
+             
+              <breadCrumb title="webpack" url="https://lijiangwei.github.io/categories/webpack/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2019/03/05/jenkins/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>jenkins</title>
+        <pubTime>2019-03-05T22:56:18.000Z</pubTime>
+        
+        <tag>CI</tag>
+         
+        <tag>jenkins</tag>
+         
+         
+           
+             
+              <breadCrumb title="jenkins" url="https://lijiangwei.github.io/categories/jenkins/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/07/18/linux-cmd-scp/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>scp命令</title>
+        <pubTime>2018-07-18T16:03:01.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>scp</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://lijiangwei.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/05/09/nginx-proxy-pass/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>nginx proxy_pass 使用</title>
+        <pubTime>2018-05-09T10:44:50.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+        <tag>proxy_pass</tag>
+         
+         
+           
+             
+              <breadCrumb title="nginx" url="https://lijiangwei.github.io/categories/nginx/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/07/25/nginx-tutorial/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>nginx常用配置</title>
+        <pubTime>2018-07-25T09:16:09.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+        <tag>tutorial</tag>
+         
+         
+           
+             
+              <breadCrumb title="nginx" url="https://lijiangwei.github.io/categories/nginx/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/05/02/node-pm2/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>pm2使用笔记</title>
+        <pubTime>2018-05-02T17:02:07.000Z</pubTime>
+        
+        <tag>node</tag>
+         
+        <tag>pm2</tag>
+         
+         
+           
+             
+              <breadCrumb title="node" url="https://lijiangwei.github.io/categories/node/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2020/03/13/nodejs-static-serve-tool/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>nodejs静态部署工具</title>
+        <pubTime>2020-03-13T10:06:05.000Z</pubTime>
+        
+        <tag>nodejs</tag>
+         
+        <tag>static server</tag>
+         
+         
+           
+             
+              <breadCrumb title="server" url="https://lijiangwei.github.io/categories/server/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/08/03/postcss-cssnano/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>postcss-cssnano</title>
+        <pubTime>2018-08-03T23:56:37.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>postcss</tag>
+         
+        <tag>cssnano</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="https://lijiangwei.github.io/categories/css/"/>
+          
+             
+              <breadCrumb title="postcss" url="https://lijiangwei.github.io/categories/css/postcss/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/08/04/postcss-stylelint/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>postcss-stylelint</title>
+        <pubTime>2018-08-04T00:10:10.000Z</pubTime>
+        
+        <tag>css</tag>
+         
+        <tag>postcss</tag>
+         
+        <tag>stylelint</tag>
+         
+         
+           
+             
+              <breadCrumb title="css" url="https://lijiangwei.github.io/categories/css/"/>
+          
+             
+              <breadCrumb title="postcss" url="https://lijiangwei.github.io/categories/css/postcss/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2020/04/05/react-hoc/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>react hoc</title>
+        <pubTime>2020-04-05T16:17:30.000Z</pubTime>
+        
+        <tag>react</tag>
+         
+        <tag>hoc</tag>
+         
+        <tag>react hooks</tag>
+         
+         
+           
+             
+              <breadCrumb title="react" url="https://lijiangwei.github.io/categories/react/"/>
+          
+             
+              <breadCrumb title="hoc" url="https://lijiangwei.github.io/categories/react/hoc/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2020/04/02/react-transition-group/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>react-transition-group</title>
+        <pubTime>2020-04-02T15:31:17.000Z</pubTime>
+        
+        <tag>-react -react-transition-group</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2019/05/08/ssr-server/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>ssr服务器安装脚本</title>
+        <pubTime>2019-05-08T08:51:44.000Z</pubTime>
+        
+        <tag>ssr</tag>
+         
+        <tag>ss</tag>
+         
+        <tag>bbr</tag>
+         
+        <tag>kcptun</tag>
+         
+         
+           
+             
+              <breadCrumb title="ssr" url="https://lijiangwei.github.io/categories/ssr/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/04/21/start/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>为什么要建博客</title>
+        <pubTime>2018-04-21T10:34:08.000Z</pubTime>
+        
+        <tag>随笔</tag>
+         
+        <tag>吐槽</tag>
+         
+         
+           
+             
+              <breadCrumb title="随笔" url="https://lijiangwei.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/07/22/tools-docs-docsify/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>docsify</title>
+        <pubTime>2018-07-22T23:28:10.000Z</pubTime>
+        
+        <tag>工具</tag>
+         
+        <tag>doc</tag>
+         
+         
+           
+             
+              <breadCrumb title="doc" url="https://lijiangwei.github.io/categories/doc/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/06/28/tools-eclipse-node-modules/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>eclipse打开npm依赖包卡死</title>
+        <pubTime>2018-06-28T09:00:46.000Z</pubTime>
+        
+        <tag>eclipse</tag>
+         
+        <tag>npm</tag>
+         
+         
+           
+             
+              <breadCrumb title="工具" url="https://lijiangwei.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+          
+             
+              <breadCrumb title="eclipse" url="https://lijiangwei.github.io/categories/%E5%B7%A5%E5%85%B7/eclipse/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2019/06/13/vpn-v2ray/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>v2ray安装</title>
+        <pubTime>2019-06-13T22:53:32.000Z</pubTime>
+        
+        <tag>vpn</tag>
+         
+        <tag>v2ray</tag>
+         
+         
+           
+             
+              <breadCrumb title="v2ray" url="https://lijiangwei.github.io/categories/v2ray/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2018/05/03/webserver-nginx/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>nginx使用</title>
+        <pubTime>2018-05-03T14:54:57.000Z</pubTime>
+        
+        <tag>nginx</tag>
+         
+        <tag>server</tag>
+         
+         
+           
+             
+              <breadCrumb title="nginx" url="https://lijiangwei.github.io/categories/nginx/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://lijiangwei.github.io/2019/06/17/wireguard/</loc>
+    <lastmod>2020-04-05T08:21:03.857Z</lastmod>
+    <data>
+        <display>
+        <title>wireguard安装及配置</title>
+        <pubTime>2019-06-17T21:55:02.000Z</pubTime>
+        
+        <tag>wireguard</tag>
+         
+        <tag>centos7</tag>
+         
+        <tag>aws linux2</tag>
+         
+         
+           
+             
+              <breadCrumb title="vpn" url="https://lijiangwei.github.io/categories/vpn/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>
